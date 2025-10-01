@@ -3,65 +3,44 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Image Prompts</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #0f1724;
-      color: #e6eef6;
-      margin: 0;
-    }
-    header, footer {
-      text-align: center;
-      padding: 20px;
-      background: #0b1220;
-    }
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
-      gap: 16px;
-      padding: 20px;
-    }
-    .card {
-      background: #1a2234;
-      border-radius: 12px;
-      padding: 16px;
-    }
-    .card h3 { margin-top: 0; }
-    .btn {
-      display: inline-block;
-      margin-top: 8px;
-      padding: 8px 12px;
-      border: 1px solid #7dd3fc;
-      border-radius: 6px;
-      color: #7dd3fc;
-      text-decoration: none;
-    }
-  </style>
+  <title>Prompt by Ali Hasnain</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <h1>Image Prompts</h1>
-    <p>Explore creative prompts</p>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="brand">Prompt by Ali Hasnain</h1>
+      <p class="tag">powered by openmallu.ai</p>
+    </div>
   </header>
 
-  <main>
-    <div class="cards">
-      <div class="card">
+  <main class="container main-content">
+    <section class="hero">
+      <h2>Create. Share. Explore prompts.</h2>
+      <p class="lead">Simple gallery style page for prompts and links.</p>
+    </section>
+
+    <section class="cards">
+      <article class="card">
         <h3>Prompt 1</h3>
-        <p>Yeh pehla image prompt hai.</p>
+        <p>Short description of the prompt or link.</p>
         <a class="btn" href="#">Open</a>
-      </div>
-      <div class="card">
+      </article>
+
+      <article class="card">
         <h3>Prompt 2</h3>
-        <p>Yeh dusra image prompt hai.</p>
+        <p>Short description of the prompt or link.</p>
         <a class="btn" href="#">Open</a>
-      </div>
-    </div>
+      </article>
+
+      <!-- Add more cards as needed -->
+    </section>
   </main>
 
-  <footer>
-    <p>© 2025 Image Prompts</p>
+  <footer class="site-footer">
+    <div class="container">
+      <small>Static HTML by Ali Hasnain • powered by openmallu.ai</small>
+    </div>
   </footer>
 </body>
 </html>
