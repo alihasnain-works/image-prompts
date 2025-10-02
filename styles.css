@@ -31,7 +31,7 @@ body{
 .tag{margin:4px 0 0;color:var(--muted);font-size:13px}
 
 .instagram-logo {
-  height: 30px;       /* thoda bada, text ke sath match */
+  height: 32px;       /* thoda bada, text ke sath match */
   width: auto;       
   vertical-align: middle;  
   margin-right: 4px;  
