@@ -1,55 +1,64 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>All Trending Prompts</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
-  <h1 class="page-title">All Trending Prompts</h1>
-
-  <div class="prompt-card">
-    <img src="Prompt_1.png" alt="Prompt 1" class="prompt-image">
-    <div class="prompt-text" id="prompt1">
-      Uploaded face image. Apply the styling, clothing, accessories, pose, props, 
-      background elements, lighting, camera setup, and atmosphere exactly as seen in the reference photo.
-      The subject stands on a rooftop lined with repeating metal railings...
+  <header class="site-header">
+    <div class="container">
+      <h1 class="brand">All Trending Prompts</h1>
+      <p class="tag">Created by alihasnain.designs</p>
     </div>
-    <button class="copy-btn" onclick="copyText('prompt1')">Copy prompt</button>
-  </div>
+  </header>
 
-  <div class="prompt-card">
-    <img src="Prompt_2.png" alt="Prompt 2" class="prompt-image">
-    <div class="prompt-text" id="prompt2">
-      Indoor portrait, cinematic lighting, soft shadows, ultra realistic 8k, natural pose,
-      inspired by magazine style photography. White walls, minimal decor.
+  <main class="container main-content">
+    <section class="hero">
+      <h2>Create | Share | Explore prompts</h2>
+      <p class="lead">Simple gallery style page for prompts</p>
+    </section>
+
+    <section class="cards">
+      <article class="card">
+  <img src="assets/Prompt_1.png" alt="Prompt 1">
+  <h3>Prompt 1</h3>
+  <p class="prompt-text">A smiling young man with neatly styled dark hair and a light beard/stubble is seated comfortably in a black gaming or ergonomic chair at a modern recording or production desk. He is wearing a simple dark long-sleeved t-shirt and dark trousers. On the desk in front of him are a professional studio microphone on a boom arm, a computer monitor displaying audio editing software (DAW) with colorful waveforms, a keyboard, and studio monitor speakers. The background features warm, vertical strip lighting and a clean, contemporary studio aesthetic. The overall mood is professional and focused, yet relaxed. Exact same face based on the reference image. --face-accuracy 100%</p>
+  <button class="btn copy-btn" onclick="copyPrompt(this)">Copy Prompt</button>
+      </article>
+
+      <article class="card">
+        <img src="assets/Prompt_2.png" alt="Prompt 2">
+        <h3>Prompt 2</h3>
+        <p class="prompt-text">Ultra realistic portrait of a young traveler.</p>
+        <button class="btn copy-btn" onclick="copyPrompt(this)">Copy Prompt</button>
+      </article>
+
+      <article class="card">
+        <img src="assets/Prompt_3.png" alt="Prompt 3">
+        <h3>Prompt 3</h3>
+        <p class="prompt-text">Modern futuristic city skyline at night.</p>
+        <button class="btn copy-btn" onclick="copyPrompt(this)">Copy Prompt</button>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>Created by alihasnain.designs</small>
     </div>
-    <button class="copy-btn" onclick="copyText('prompt2')">Copy prompt</button>
-  </div>
-
-  <div class="prompt-card">
-    <img src="Prompt_3.png" alt="Prompt 3" class="prompt-image">
-    <div class="prompt-text" id="prompt3">
-      Street style fashion photography, neon lights in the background, 
-      depth of field bokeh effect, candid pose with confident expression.
-    </div>
-    <button class="copy-btn" onclick="copyText('prompt3')">Copy prompt</button>
-  </div>
-
-  <footer class="footer-text">
-    Created by alihasnain.designs
   </footer>
 
+  <!-- Copy Function -->
   <script>
-    function copyText(id) {
-      const text = document.getElementById(id).innerText;
+    function copyPrompt(button) {
+      const text = button.parentElement.querySelector(".prompt-text").innerText;
       navigator.clipboard.writeText(text).then(() => {
-        alert("Prompt copied!");
+        button.innerText = "Copied! ✅";
+        setTimeout(() => button.innerText = "Copy Prompt", 2000);
       });
     }
   </script>
-
 </body>
 </html>
