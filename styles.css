@@ -1,5 +1,5 @@
 :root{
-  --bg:#0f1724;
+  --bg:#2c2c2c; /* lighter dark gray background */
   --card:#0b1220;
   --muted:#9aa4b2;
   --accent:#7dd3fc;
@@ -12,7 +12,7 @@
 *{box-sizing:border-box}
 body{
   margin:0;
-  background:#2c2c2c; /* Light Grayish Black */
+  background:var(--bg);
   color:var(--text);
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
@@ -40,6 +40,13 @@ body{
   padding:16px;
   box-shadow: 0 6px 18px rgba(2,6,23,0.6);
   border: 1px solid rgba(255,255,255,0.03);
+}
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  display: block;
+  margin-bottom: 12px;
 }
 .card h3{margin:0 0 8px;font-size:18px}
 .card p{margin:0 0 12px;color:var(--muted);font-size:14px}
