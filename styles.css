@@ -56,6 +56,11 @@ body{
 .card h3{margin:0 0 8px;font-size:18px}
 .card p{margin:0 0 12px;color:var(--muted);font-size:14px}
 .btn{
+  .prompt-text {
+  max-height: 80px;   /* text box ki height control */
+  overflow-y: auto;   /* agar text zyada ho to scroll bar */
+  padding-right: 4px; /* scroll bar k liye thoda gap */
+  }
   display:inline-block;
   padding:8px 12px;
   border-radius:8px;
