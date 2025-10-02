@@ -60,11 +60,20 @@ body{
   background:#111; /* thoda alag box look */
   border-radius:8px;
   padding:10px;
-  font-size:14px;
+  font-size:14px;   /* mobile ke liye default */
+  line-height:1.4;
   color:var(--muted);
   max-height:100px;  /* chhota fixed height */
   overflow-y:auto;   /* scroll if text is long */
   margin:0 0 12px;
+}
+
+/* Desktop screens ke liye font thoda chhota */
+@media (min-width: 992px) {
+  .prompt-text {
+    font-size:13px;
+    line-height:1.3;
+  }
 }
 
 .btn{
