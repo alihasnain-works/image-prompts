@@ -12,7 +12,7 @@
 *{box-sizing:border-box}
 body{
   margin:0;
-  background:#1c1c1c; /* Dark Gray / Light Black background */
+  background:#2c2c2c; /* Light Grayish Black */
   color:var(--text);
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
