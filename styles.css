@@ -30,6 +30,13 @@ body{
 }
 .tag{margin:4px 0 0;color:var(--muted);font-size:13px}
 
+.instagram-logo {
+  height: 18px;      /* text ke size se thodi badi */
+  width: auto;
+  vertical-align: middle;  /* text ke sath align ho jaye */
+  margin-right: 6px;  /* thoda space text aur logo ke beech */
+}
+
 .hero{padding:28px 0; text-align:center;}
 .hero h2{margin:0 0 8px;font-size:24px}
 .lead{color:var(--muted);margin:0 0 20px}
