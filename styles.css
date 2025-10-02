@@ -54,13 +54,20 @@ body{
   margin-bottom: 12px;
 }
 .card h3{margin:0 0 8px;font-size:18px}
-.card p{margin:0 0 12px;color:var(--muted);font-size:14px}
+
+/* Prompt text box (scrollable like reference) */
+.prompt-text{
+  background:#111; /* thoda alag box look */
+  border-radius:8px;
+  padding:10px;
+  font-size:14px;
+  color:var(--muted);
+  max-height:100px;  /* chhota fixed height */
+  overflow-y:auto;   /* scroll if text is long */
+  margin:0 0 12px;
+}
+
 .btn{
-  .prompt-text {
-  max-height: 80px;   /* text box ki height control */
-  overflow-y: auto;   /* agar text zyada ho to scroll bar */
-  padding-right: 4px; /* scroll bar k liye thoda gap */
-  }
   display:inline-block;
   padding:8px 12px;
   border-radius:8px;
@@ -83,4 +90,4 @@ body{
 @media (max-width:600px){
   .container{padding:16px}
   .brand{font-size:24px}
-  }
+}
