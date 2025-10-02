@@ -3,13 +3,17 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title> All Trending Prompts </title>
+  <title>Prompt by Ali Hasnain</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="site-header">
-    <div class="container">
-      <h1 class="brand">>All Trending Prompts</h1>
+    <div class="container header-inner">
+      <div class="brand-wrap">
+        <!-- optional logo -->
+        <img src="assets/logo.png" alt="Logo" class="logo" onerror="this.style.display='none'">
+        <h1 class="brand"> All Trending Prompts </h1>
+      </div>
       <p class="tag">powered by alihasnain.designs</p>
     </div>
   </header>
@@ -20,20 +24,44 @@
       <p class="lead">Simple gallery style page for prompts and links.</p>
     </section>
 
-    <section class="cards">
+    <section class="cards" id="cards">
+      <!-- Card 1 -->
       <article class="card">
-        <h3>Prompt 1</h3>
-        <p>Short description of the prompt or link.</p>
-        <a class="btn" href="#">Open</a>
+        <div class="card-media">
+          <img src="assets/Prompt_1.png" alt="Prompt 1">
+        </div>
+        <div class="card-body">
+          <h3>Prompt 1</h3>
+          <p>Short description of Prompt 1 (replace with your text).</p>
+          <a class="btn" href="#">Open</a>
+        </div>
       </article>
 
+      <!-- Card 2 -->
       <article class="card">
-        <h3>Prompt 2</h3>
-        <p>Short description of the prompt or link.</p>
-        <a class="btn" href="#">Open</a>
+        <div class="card-media">
+          <img src="assets/Prompt_2.png" alt="Prompt 2">
+        </div>
+        <div class="card-body">
+          <h3>Prompt 2</h3>
+          <p>Short description of Prompt 2 (replace with your text).</p>
+          <a class="btn" href="#">Open</a>
+        </div>
       </article>
 
-      <!-- Add more cards as needed -->
+      <!-- Card 3 -->
+      <article class="card">
+        <div class="card-media">
+          <img src="assets/Prompt_3.png" alt="Prompt 3">
+        </div>
+        <div class="card-body">
+          <h3>Prompt 3</h3>
+          <p>Short description of Prompt 3 (replace with your text).</p>
+          <a class="btn" href="#">Open</a>
+        </div>
+      </article>
+
+      <!-- Add more cards by copying a card block and updating the image filename -->
     </section>
   </main>
 
