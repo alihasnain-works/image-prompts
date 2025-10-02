@@ -16,30 +16,30 @@
 
   <main class="container main-content">
     <section class="hero">
-      <h2> Create | Share | Explore prompts </h2>
-      <p class="lead">Simple gallery style page for prompts </p>
+      <h2>Create. Share. Explore prompts.</h2>
+      <p class="lead">Simple gallery style page for prompts and links.</p>
     </section>
 
     <section class="cards">
       <article class="card">
         <img src="assets/Prompt_1.jpg" alt="Prompt 1">
         <h3>Prompt 1</h3>
-        <p>Short description of the prompt or link.</p>
-        <a class="btn" href="#">Open</a>
+        <p class="prompt-text">Ultra realistic portrait of a man in cinematic lighting.</p>
+        <button class="btn copy-btn">Copy Prompt</button>
       </article>
 
       <article class="card">
         <img src="assets/Prompt_2.jpg" alt="Prompt 2">
         <h3>Prompt 2</h3>
-        <p>Short description of the prompt or link.</p>
-        <a class="btn" href="#">Open</a>
+        <p class="prompt-text">A futuristic city skyline at sunset, cyberpunk style.</p>
+        <button class="btn copy-btn">Copy Prompt</button>
       </article>
 
       <article class="card">
         <img src="assets/Prompt_3.jpg" alt="Prompt 3">
         <h3>Prompt 3</h3>
-        <p>Short description of the prompt or link.</p>
-        <a class="btn" href="#">Open</a>
+        <p class="prompt-text">A cozy coffee shop interior with warm lights.</p>
+        <button class="btn copy-btn">Copy Prompt</button>
       </article>
     </section>
   </main>
@@ -49,5 +49,18 @@
       <small>Created by alihasnain.designs</small>
     </div>
   </footer>
+
+  <script>
+    // Copy button functionality
+    document.querySelectorAll('.copy-btn').forEach(button => {
+      button.addEventListener('click', () => {
+        const prompt = button.parentElement.querySelector('.prompt-text').innerText;
+        navigator.clipboard.writeText(prompt).then(() => {
+          button.innerText = "Copied!";
+          setTimeout(() => { button.innerText = "Copy Prompt"; }, 1500);
+        });
+      });
+    });
+  </script>
 </body>
 </html>
