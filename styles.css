@@ -68,11 +68,12 @@ body{
   margin:0 0 12px;
 }
 
-/* Desktop screens ke liye font thoda chhota */
+/* Desktop screens ke liye */
 @media (min-width: 992px) {
   .prompt-text {
-    font-size:10px;
-    line-height:1.3;
+    font-size:14px;      /* readable font */
+    line-height:1.5;     /* thoda spacing */
+    max-height:180px;    /* height badha di */
   }
 }
 
