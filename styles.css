@@ -71,7 +71,7 @@ body{
 /* Desktop screens ke liye font thoda chhota */
 @media (min-width: 992px) {
   .prompt-text {
-    font-size:13px;
+    font-size:10px;
     line-height:1.3;
   }
 }
