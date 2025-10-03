@@ -201,22 +201,31 @@ body{
 
 .pagination {
   text-align: center;
-  margin: 20px 0;
+  margin: 30px 0;
 }
 
-.pagination a {    /* Page Number Style */
+.pagination a {
   display: inline-block;
-  margin: 0 5px;
-  padding: 8px 12px;
-  background: #222;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;          /* text ko center align karega */
+  margin: 0 6px;
+  background: #222;           /* box color */
   color: #fff;
   text-decoration: none;
-  border-radius: 6px;
+  font-weight: bold;
+  border-radius: 8px;         /* square ki corners thodi gol */
   transition: 0.3s;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.4);
 }
 
 .pagination a:hover {
   background: #444;
+}
+
+.pagination a.active {
+  background: linear-gradient(45deg, #FF7300, #FF00C8); /* gradient effect */
+  color: #fff;
 }
 
 .site-footer{padding:22px 0;text-align:center;color:var(--muted);font-size:13px}
