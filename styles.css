@@ -31,7 +31,7 @@ body{
 .tag{margin:4px 0 0;color:var(--muted);font-size:13px}
 
 .instagram-logo {
-  height: 18px;      /* mobile default */
+  height: 14px;      /* mobile default */
   width: auto;
   vertical-align: middle;
   margin-right: 6px;
