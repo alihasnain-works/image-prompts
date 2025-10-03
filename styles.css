@@ -31,16 +31,16 @@ body{
 .tag{margin:4px 0 0;color:var(--muted);font-size:13px}
 
 .instagram-logo {
-  height: 16px;      /* mobile default */
+  height: 18px;      /* mobile default */
   width: auto;
   vertical-align: middle;
-  margin-right: 4px;
+  margin-right: 2px;
 }
 
 /* Desktop screens ke liye */
 @media (min-width: 992px) {
   .instagram-logo {
-    height: 36px;   /* thodi badi ho gayi desktop pe */
+    height: 30px;   /* thodi badi ho gayi desktop pe */
   }
 }
 
