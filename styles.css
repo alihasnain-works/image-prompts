@@ -199,6 +199,26 @@ body{
   100% {background-position: 0 0;}
 }
 
+.pagination {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.pagination a {    /* Page Number Style */
+  display: inline-block;
+  margin: 0 5px;
+  padding: 8px 12px;
+  background: #222;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.pagination a:hover {
+  background: #444;
+}
+
 .site-footer{padding:22px 0;text-align:center;color:var(--muted);font-size:13px}
 @media (max-width:600px){
   .container{padding:16px}
