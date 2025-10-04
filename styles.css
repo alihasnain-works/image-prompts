@@ -298,7 +298,7 @@ body{
 .toggle-btn {
   background: none;   /* background hata diya */
   border: none;       /* border bhi hata diya */
-  font-size: 16px;    /* arrow size thoda readable */
+  font-size: 20px;    /* arrow size thoda readable */
   cursor: pointer;
   color: var(--text); /* text color follow karega */
   padding: 0;         /* extra space hata diya */
