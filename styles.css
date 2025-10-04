@@ -261,6 +261,35 @@ body{
   color: #fff;
 }
 
+/* Toggle button styling */
+.toggle-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+/* Rotate arrow when active */
+.toggle-btn.active {
+  transform: rotate(180deg);
+}
+
+/* Hidden by default */
+.prompt-text {
+  display: none;
+  margin-top: 8px;
+  height: 90px;
+  overflow-y: auto;
+  transition: all 0.3s ease;
+}
+
+/* Show when active */
+.prompt-text.show {
+  display: block;
+}
+
 .site-footer{padding:22px 0;text-align:center;color:var(--muted);font-size:13px}
 @media (max-width:600px){
   .container{padding:16px}
