@@ -138,7 +138,7 @@ body{
   font-size:13px;   /* mobile ke liye default */
   line-height:1.4;
   color:var(--muted);
-  max-height:90px;  /* chhota fixed height */
+  max-height:80px;  /* chhota fixed height */
   overflow-y:auto;   /* scroll if text is long */
   margin:0 0 12px;
 }
