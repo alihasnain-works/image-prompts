@@ -56,14 +56,14 @@ body{
 .card{
   background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
   border-radius:var(--radius);
-  padding:16px;
+  padding:12px;
   box-shadow: 0 6px 18px rgba(2,6,23,0.6);
   border: 1px solid rgba(255,255,255,0.03);
 }
 .card-text {
-  font-size: 14px;       /* font thoda small rakha hai desktop ke liye */
+  font-size: 13px;       /* font thoda small rakha hai desktop ke liye */
   line-height: 1.4;
-  height: 120px;         /* apne design ke hisaab se adjust kar lo */
+  height: 100px;         /* apne design ke hisaab se adjust kar lo */
   overflow-y: auto;      /* scrolling allow karega */
   padding-right: 6px;    /* taake text scrollbar ke upar chipke nahi */
 }
@@ -102,10 +102,10 @@ body{
   background:#111; /* thoda alag box look */
   border-radius:8px;
   padding:10px;
-  font-size:14px;   /* mobile ke liye default */
+  font-size:13px;   /* mobile ke liye default */
   line-height:1.4;
   color:var(--muted);
-  max-height:100px;  /* chhota fixed height */
+  max-height:90px;  /* chhota fixed height */
   overflow-y:auto;   /* scroll if text is long */
   margin:0 0 12px;
 }
