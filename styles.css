@@ -289,6 +289,20 @@ body{
 .prompt-text.show {
   display: block;
 }
+.prompt-header {
+  display: flex;
+  justify-content: space-between; /* title left, arrow right */
+  align-items: center;
+}
+
+.toggle-btn {
+  background: none;   /* background hata diya */
+  border: none;       /* border bhi hata diya */
+  font-size: 16px;    /* arrow size thoda readable */
+  cursor: pointer;
+  color: var(--text); /* text color follow karega */
+  padding: 0;         /* extra space hata diya */
+}
 
 .site-footer{padding:22px 0;text-align:center;color:var(--muted);font-size:13px}
 @media (max-width:600px){
