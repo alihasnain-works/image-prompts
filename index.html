@@ -239,7 +239,18 @@ Exact same face based on the reference image!
       });
     }
   </script>
-    
+
+   <script>
+  const toggleButtons = document.querySelectorAll('.toggle-btn');
+  toggleButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const promptText = button.parentElement.nextElementSibling;
+      promptText.classList.toggle('show');
+      button.classList.toggle('active');
+    });
+  });
+   </script>
+  
   </div>
 </body>
 </html>
