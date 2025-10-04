@@ -244,12 +244,13 @@ Exact same face based on the reference image!
 function togglePrompt(btn) {
   const card = btn.closest(".card");
   const prompt = card.querySelector(".prompt-text");
+
   if (prompt.style.display === "none") {
     prompt.style.display = "block";
     btn.innerHTML = "&#9662;"; // ▼ down arrow
   } else {
     prompt.style.display = "none";
-    btn.innerHTML = "&#9656;"; // ▶ right arrow
+    btn.innerHTML = "&#9650;"; // ▲ up arrow
   }
 }
    </script>
