@@ -261,65 +261,64 @@ body{
   color: #fff;
 }
 
-/* Toggle button styling */
-/* Toggle button styling */
+/* ===========================
+   1. TOGGLE BUTTON BASE STYLE
+   =========================== */
 .toggle-btn {
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 4px;
-  display: flex;
+  background: none;              /* Transparent background */
+  border: none;                  /* No border */
+  cursor: pointer;               /* Pointer cursor on hover */
+  padding: 4px;                  /* Small space inside button */
+  display: flex;                 /* Center icon horizontally & vertically */
   align-items: center;
-  margin-left: 10px;
   justify-content: center;
-  transition: transform 0.3s ease-in-out;
+  margin-left: 10px;             /* Gap between text and arrow */
+  transition: transform 0.3s ease-in-out; /* Smooth animation */
 }
-/* SVG styling */
+
+/* ===========================
+   2. ARROW (SVG ICON) STYLE
+   =========================== */
 .arrow-icon {
-  width: 20px;
-  height: 20px;
-  fill: white;          /* filled look */
-  stroke: none;         /* border hatt gaya */
+  width: 22px;                   /* Arrow size */
+  height: 22px;
+  fill: white;                   /* Arrow color (solid white) */
+  stroke: none;                  /* Remove any outline stroke */
+  transform-origin: center;      /* Rotate from center */
   transition: transform 0.3s ease-in-out;
-}
-  .arrow-icon path {
-  d: path("M6 9L12 15L18 9Z"); /* perfect equilateral triangle */
-  rx: 1.5; /* thoda curve */
-  }
-
-  {
-  transform-origin: center; /* ensures smooth rotation */
-  top: -2px; /* thoda adjust taake center me aaye */
-  filter: drop-shadow(0 0 2px rgba(255,255,255,0.5));
+  filter: drop-shadow(0 0 2px rgba(255,255,255,0.5)); /* Soft glow look */
 }
 
-/* Fix for cutting issue */
+/* When user clicks, arrow rotates 180 degrees (down → up) */
+.toggle-btn.active .arrow-icon {
+  transform: rotate(180deg);
+}
+
+/* ===========================
+   3. PROMPT HEADER
+   =========================== */
 .prompt-header {
-  display: flex;
+  display: flex;                 /* Title left, arrow right */
   justify-content: space-between;
   align-items: center;
-  overflow: visible; /* important: prevents cutting */
-  padding-bottom: 4px; /* gives breathing room below arrow */
+  overflow: visible;             /* Prevents arrow from cutting */
+  padding-bottom: 4px;           /* Some breathing space below */
 }
 
-/* Rotate arrow when active */
-.toggle-btn.active {
-  transform: rotate(180deg);
-  top: -2; /* rotation ke baad bhi center alignment maintain ho */
-}
-
-/* Hidden by default */
+/* ===========================
+   4. PROMPT TEXT (HIDDEN/SHOW)
+   =========================== */
 .prompt-text {
-  display: none;
+  display: none;                 /* Hidden by default */
   margin-top: 8px;
-  height: 90px;
-  overflow-y: auto;
+  height: 90px;                  /* Fixed box height */
+  overflow-y: auto;              /* Scroll when text long */
   transition: all 0.3s ease;
 }
 
-/* Show when active */
+/* When active class added via JS */
 .prompt-text.show {
-  display: block;
+  display: block;                /* Makes text box visible */
 }
 
 .site-footer{padding:22px 0;text-align:center;color:var(--muted);font-size:13px}
