@@ -240,20 +240,17 @@ Exact same face based on the reference image!
     }
   </script>
 
-   <script>
-function togglePrompt(btn) {
-  const card = btn.closest(".card");
-  const prompt = card.querySelector(".prompt-text");
+  <script>
+  const toggleButtons = document.querySelectorAll('.toggle-btn');
 
-  if (prompt.style.display === "none") {
-    prompt.style.display = "block";
-    btn.innerHTML = "&#9662;"; // ▼ down arrow
-  } else {
-    prompt.style.display = "none";
-    btn.innerHTML = "&#9650;"; // ▲ up arrow
-  }
-}
-   </script>
+  toggleButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const promptText = button.parentElement.nextElementSibling;
+      promptText.classList.toggle('show');
+      button.classList.toggle('active');
+    });
+  });
+  </script>
   
   </div>
 </body>
