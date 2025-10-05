@@ -267,13 +267,18 @@ body{
   border: none;       /* border bhi hata diya */
   width: 0; /* ek choti si fixed width */
   height: 0; /* taake dono arrows equal box me aayein */
-  border-left: 7px solid transparent;
-  border-right: 7px solid transparent;
-  border-top: 10px solid white; /* white triangle */
+  border-top: 10px solid white;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-radius: 2px; /* thoda shape soft ho jata hai */
+  filter: blur(0.3px);
   cursor: pointer;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, filter 0.2s ease-in-out;
   flex-shrink: 0; /* prevent shrinking inside flex */
   margin-left: 10px; /* thoda gap title se */
+  
+  /* Soft rounded edges trick */
+  filter: drop-shadow(0 0 1px rgba(255,255,255,0.6)) blur(0.4px);
 }
 
 /* Rotate arrow when active */
