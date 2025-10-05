@@ -281,7 +281,7 @@ body{
 
   /* Keeps shape stable inside flex containers */
   flex-shrink: 0;
-  margin-left: 10px;
+  margin-left: 16px;
 }
 /* ===========================
    15. ROTATION
