@@ -1,5 +1,8 @@
+/* ===========================
+   1. ROOT VARIABLES
+   =========================== */
 :root{
-  --bg:#262626; /* lighter dark gray background */
+  --bg:#262626;
   --card:#0b1220;
   --muted:#9aa4b2;
   --accent:#7dd3fc;
@@ -9,6 +12,9 @@
   font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
 }
 
+/* ===========================
+   2. GLOBAL RESET & BODY
+   =========================== */
 *{box-sizing:border-box}
 body{
   margin:0;
@@ -21,71 +27,73 @@ body{
 
 .container{max-width:var(--container);margin:0 auto;padding:28px;}
 
-.site-header{padding:18px 0; text-align:center;} /* header center */
+/* ===========================
+   3. HEADER SECTION
+   =========================== */
+.site-header{padding:18px 0; text-align:center;}
 .brand{
   margin:0;
   font-size:32px;
-  font-weight:700; /* bold */
+  font-weight:700;
   letter-spacing:0.5px;
 }
 .tag{margin:4px 0 0;color:var(--muted);font-size:13px}
 
+/* ===========================
+   4. INSTAGRAM LOGO RESPONSIVE STYLE
+   =========================== */
 .instagram-logo {
-  height: 18px;      /* mobile default */
+  height: 18px;
   width: auto;
   vertical-align: middle;
   margin-right: 2px;
 }
-
-/* Desktop screens ke liye */
 @media (min-width: 992px) {
   .instagram-logo {
-    height: 30px;   /* thodi badi ho gayi desktop pe */
+    height: 30px;
   }
 }
 
+/* ===========================
+   5. HERO SECTION
+   =========================== */
 .hero{padding:28px 0; text-align:center;}
 .hero h2{margin:0 0 8px;font-size:24px}
 .lead{color:var(--muted);margin:0 0 20px}
 
+/* ===========================
+   6. CARD GRID LAYOUT (RESPONSIVE)
+   =========================== */
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Default for desktop */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 16px;
   justify-content: center;
   align-items: start;
 }
-
-/* For larger screens (desktop) */
 @media (min-width: 1200px) {
-  .cards {
-    grid-template-columns: repeat(4, 1fr); /* 4 cards per row */
-  }
+  .cards { grid-template-columns: repeat(4, 1fr); }
 }
-
-/* For medium screens (laptops/tablets) */
 @media (max-width: 1199px) and (min-width: 768px) {
-  .cards {
-    grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
-  }
+  .cards { grid-template-columns: repeat(3, 1fr); }
 }
-
-/* For mobile phones */
 @media (max-width: 767px) {
   .cards {
-    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+    grid-template-columns: repeat(2, 1fr);
   }
-
   .card {
-    max-width: 180px; /* Size controlled for mobile */
+    max-width: 180px;
     margin: 0 auto;
   }
-
   .card img {
-    height: 160px; /* Image height balanced for mobile */
+    height: 160px;
     object-fit: cover;
   }
 }
+
+/* ===========================
+   7. CARD DESIGN
+   =========================== */
 .card{
   background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
   border-radius:var(--radius);
@@ -94,33 +102,27 @@ body{
   border: 1px solid rgba(255,255,255,0.03);
 }
 .card-text {
-  font-size: 13px;       /* font thoda small rakha hai desktop ke liye */
+  font-size: 13px;
   line-height: 1.4;
-  height: 100px;         /* apne design ke hisaab se adjust kar lo */
-  overflow-y: auto;      /* scrolling allow karega */
-  padding-right: 6px;    /* taake text scrollbar ke upar chipke nahi */
+  height: 100px;
+  overflow-y: auto;
+  padding-right: 6px;
 }
 
-/* Chrome, Edge, Safari scrollbar styling */
-.card-text::-webkit-scrollbar {
-  width: 5px;            /* slim bar */
-}
+/* ===========================
+   8. SCROLLBAR STYLING
+   =========================== */
+.card-text::-webkit-scrollbar { width: 5px; }
 .card-text::-webkit-scrollbar-thumb {
-  background: #555;       /* thumb ka color */
-  border-radius: 10px;    /* gol gol edges */
+  background: #555;
+  border-radius: 10px;
 }
 .card-text::-webkit-scrollbar-thumb:hover {
-  background: #777;       /* hover pe halka light */
+  background: #777;
 }
-.card-text::-webkit-scrollbar-track {
-  background: transparent;
-}
+.card-text::-webkit-scrollbar-track { background: transparent; }
+.card-text { scrollbar-width: thin; scrollbar-color: #555 transparent; }
 
-/* Firefox ke liye */
-.card-text {
-  scrollbar-width: thin;
-  scrollbar-color: #555 transparent;
-}
 .card img {
   width: 100%;
   height: auto;
@@ -130,28 +132,31 @@ body{
 }
 .card h3{margin:0 0 8px;font-size:18px}
 
-/* Prompt text box (scrollable like reference) */
+/* ===========================
+   9. PROMPT TEXT BOX
+   =========================== */
 .prompt-text{
-  background:#111; /* thoda alag box look */
+  background:#111;
   border-radius:8px;
   padding:10px;
-  font-size:13px;   /* mobile ke liye default */
+  font-size:13px;
   line-height:1.4;
   color:var(--muted);
-  max-height:100px;  /* chhota fixed height */
-  overflow-y:auto;   /* scroll if text is long */
+  max-height:100px;
+  overflow-y:auto;
   margin:0 0 12px;
 }
-
-/* Desktop screens ke liye */
 @media (min-width: 992px) {
   .prompt-text {
-    font-size:14px;      /* readable font */
-    line-height:1.5;     /* thoda spacing */
-    max-height:180px;    /* height badha di */
+    font-size:14px;
+    line-height:1.5;
+    max-height:180px;
   }
 }
 
+/* ===========================
+   10. BUTTONS BASE STYLE
+   =========================== */
 .btn{
   display:inline-block;
   padding:8px 12px;
@@ -162,10 +167,12 @@ body{
   cursor:pointer;
 }
 
-/* Glowing button for copy prompt */
+/* ===========================
+   11. COPY BUTTON (GLOW EFFECT)
+   =========================== */
 .copy-btn {
-  margin: 0; /* cards ke andar spacing already hai */
-  padding: 12px 28px; /* thoda bada padding for glow */
+  margin: 0;
+  padding: 12px 28px;
   border: none;
   outline: none;
   color: #FFF;
@@ -173,12 +180,11 @@ body{
   position: relative;
   z-index: 0;
   border-radius: 12px;
-  background-color: #333; /* base color */
+  background-color: #333;
   font-weight:600;
   font-size:14px;
   transition: color 0.3s ease-in-out;
 }
-
 .copy-btn::after {
   content: "";
   z-index: -1;
@@ -190,7 +196,6 @@ body{
   top: 0;
   border-radius: 12px;
 }
-
 .copy-btn::before {
   content: "";
   background: linear-gradient(
@@ -211,58 +216,51 @@ body{
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
 }
-
-.copy-btn:hover::before {
-  opacity: 1;
-}
-
-.copy-btn:active::after {
-  background: transparent;
-}
-
+.copy-btn:hover::before { opacity: 1; }
+.copy-btn:active::after { background: transparent; }
 .copy-btn:active {
   color: #000;
   font-weight: bold;
 }
 
-/* glowing animation */
+/* ===========================
+   12. GLOW ANIMATION
+   =========================== */
 @keyframes glowing {
   0% {background-position: 0 0;}
   50% {background-position: 400% 0;}
   100% {background-position: 0 0;}
 }
 
+/* ===========================
+   13. PAGINATION SECTION
+   =========================== */
 .pagination {
   text-align: center;
   margin: 30px 0;
 }
-
 .pagination a {
   display: inline-block;
   width: 40px;
   height: 40px;
-  line-height: 40px;          /* text ko center align karega */
+  line-height: 40px;
   margin: 0 6px;
-  background: #222;           /* box color */
+  background: #222;
   color: #fff;
   text-decoration: none;
   font-weight: bold;
-  border-radius: 8px;         /* square ki corners thodi gol */
+  border-radius: 8px;
   transition: 0.3s;
   box-shadow: 0 2px 6px rgba(0,0,0,0.4);
 }
-
-.pagination a:hover {
-  background: #444;
-}
-
+.pagination a:hover { background: #444; }
 .pagination a.active {
-  background: linear-gradient(45deg, #FF7300, #FF00C8); /* gradient effect */
+  background: linear-gradient(45deg, #FF7300, #FF00C8);
   color: #fff;
-}
+    }
 
 /* ===========================
-   1. TOGGLE BUTTON STYLE
+   14. TOGGLE BUTTON STYLE
    =========================== */
 .toggle-btn {
   background: none;
@@ -277,7 +275,7 @@ body{
 }
 
 /* ===========================
-   2. ROUNDED ARROW STYLE
+   15. ROUNDED ARROW STYLE
    =========================== */
 .arrow-icon {
   width: 22px;
@@ -294,7 +292,7 @@ body{
 }
 
 /* ===========================
-   3. HEADER ALIGNMENT
+   16. HEADER ALIGNMENT
    =========================== */
 .prompt-header {
   display: flex;
@@ -305,7 +303,7 @@ body{
 }
 
 /* ===========================
-   4. TOGGLE TEXT BOX
+   17. TOGGLE TEXT BOX
    =========================== */
 .prompt-text {
   display: none;
