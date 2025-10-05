@@ -1,37 +1,47 @@
 <!doctype html>
 <html lang="en">
 <head>
+  <!-- ========== META & TITLE SECTION ========== -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>All Trending Prompts</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
+  <!-- ========== HEADER SECTION ========== -->
   <header class="site-header">
     <div class="container">
       <h1 class="brand">All Trending Prompts</h1>
       <p class="tag">
-  <img src="assets/instagram_logo.png" alt="Instagram" class="instagram-logo">
-  alihasnain.designs
-</p>
+        <img src="assets/instagram_logo.png" alt="Instagram" class="instagram-logo">
+        alihasnain.designs
+      </p>
     </div>
   </header>
 
+  <!-- ========== MAIN CONTENT SECTION ========== -->
   <main class="container main-content">
+
+    <!-- ========== HERO SECTION ========== -->
     <section class="hero">
       <h2>Explore | Create | Share</h2>
       <p class="lead">Simple gallery style page for prompts</p>
     </section>
 
+    <!-- ========== PROMPT CARDS SECTION ========== -->
     <section class="cards">
+
+      <!-- ========== PROMPT CARD 1 ========== -->
       <article class="card">
         <img src="assets/Prompt_1.png" alt="Prompt 1" loading="lazy">
         <div class="prompt-header">
-    <h3>Prompt 1</h3>
-    <button class="toggle-btn" onclick="togglePrompt(this)">
-    <svg class="arrow-icon" viewBox="0 0 24 24">
-      <path d="M6 9L12 15L18 9Z" /> </svg>
-    </button>
+          <h3>Prompt 1</h3>
+          <button class="toggle-btn" onclick="togglePrompt(this)">
+            <svg class="arrow-icon" viewBox="0 0 24 24">
+              <path d="M6 9L12 15L18 9Z" />
+            </svg>
+          </button>
         </div>
         <p class="prompt-text">
           A (22-years-old) young man, riding a mountain bike and performing a high jump in the forest, seen from an extreme low angle (frog eye view) directly from underneath the bike. His face is clearly visible, looking down with a smiling expression. The bike tires are red with rugged details, dominating the foreground and creating a dramatic perspective effect. The rider is wearing a cream-colored windbreaker jacket, black denim jeans, a black baseball cap worn backward, and black gloves. The background shows tall leafless trees against a clear blue sky under slight warm natural morning sunlight. The atmosphere is dynamic, full of action, with a sense of speed and energy. Sharp details, high contrast colors, wide-angle effect. 8K resolution, DSLR quality, aspect ratio 4:3 landscape, ultra-realistic, highly detailed, sharp focus, cinematic lighting, action shot, natural sunlight, vivid colors, depth of field, dynamic composition. Exact same face based on the reference image.
@@ -39,6 +49,7 @@
         <button class="btn copy-btn" onclick="copyPrompt(this)">Copy Prompt</button>
       </article>
 
+      <!-- ========== PROMPT CARD 2 ========== -->
       <article class="card">
         <img src="assets/Prompt_2.png" alt="Prompt 2" loading="lazy">
         <h3>Prompt 2</h3>
@@ -48,6 +59,7 @@
         <button class="btn copy-btn" onclick="copyPrompt(this)">Copy Prompt</button>
       </article>
 
+      <!-- ========== PROMPT CARD 3 ========== -->
       <article class="card">
         <img src="assets/Prompt_3.png" alt="Prompt 3"loading="lazy">
         <h3>Prompt 3</h3>
@@ -57,6 +69,7 @@
         <button class="btn copy-btn" onclick="copyPrompt(this)">Copy Prompt</button>
       </article>
 
+      <!-- ========== PROMPT CARD 4 ========== -->
       <article class="card">
   <img src="assets/Prompt_4.png" alt="Prompt 4" loading="lazy">
   <h3>Prompt 4</h3>
@@ -67,6 +80,7 @@ Dont change my face! dont change my face!
   <button class="btn copy-btn" onclick="copyPrompt(this)">Copy Prompt</button>
 </article>
 
+      <!-- ========== PROMPT CARD 5 ========== -->
 <article class="card">
   <img src="assets/Prompt_5.png" alt="Prompt 5" loading="lazy">
   <h3>Prompt 5</h3>
@@ -76,6 +90,7 @@ Dont change my face! dont change my face!
   <button class="btn copy-btn" onclick="copyPrompt(this)">Copy Prompt</button>
 </article>
 
+      <!-- ========== PROMPT CARD 6 ========== -->
 <article class="card">
   <img src="assets/Prompt_6.png" alt="Prompt 6" loading="lazy">
   <h3>Prompt 6</h3>
@@ -85,6 +100,7 @@ Dont change my face! dont change my face!
   <button class="btn copy-btn" onclick="copyPrompt(this)">Copy Prompt</button>
 </article>
 
+      <!-- ========== PROMPT CARD 7 ========== -->
 <article class="card">
   <img src="assets/Prompt_7.png" alt="Prompt 7" loading="lazy">
   <h3>Prompt 7</h3>
@@ -95,6 +111,7 @@ Ultra-detailed photorealistic textures, sharp focus, perfect golden-hour lightin
   <button class="btn copy-btn" onclick="copyPrompt(this)">Copy Prompt</button>
 </article>
 
+      <!-- ========== PROMPT CARD 8 ========== -->
 <article class="card">
   <img src="assets/Prompt_8.png" alt="Prompt 8" loading="lazy">
   <h3>Prompt 8</h3>
@@ -104,6 +121,7 @@ Ultra realistic, 8K resolution cinematic image of a person crouching beside a po
   <button class="btn copy-btn" onclick="copyPrompt(this)">Copy Prompt</button>
 </article>
 
+      <!-- ========== PROMPT CARD 9 ========== -->
 <article class="card">
   <img src="assets/Prompt_9.png" alt="Prompt 9" loading="lazy">
   <h3>Prompt 9</h3>
@@ -113,6 +131,7 @@ Ultra realistic, 8K resolution cinematic image of a person crouching beside a po
   <button class="btn copy-btn" onclick="copyPrompt(this)">Copy Prompt</button>
 </article>
 
+      <!-- ========== PROMPT CARD 10 ========== -->
 <article class="card">
   <img src="assets/Prompt_10.png" alt="Prompt 10">
   <h3>Prompt 10</h3>
@@ -123,6 +142,7 @@ One arm rests on the sofa back while the other hand hovers near the cheetah, whi
   <button class="btn copy-btn" onclick="copyPrompt(this)">Copy Prompt</button>
 </article>
 
+      <!-- ========== PROMPT CARD 11 ========== -->
 <article class="card">
   <img src="assets/Prompt_11.png" alt="Prompt 11">
   <h3>Prompt 11</h3>
@@ -134,6 +154,7 @@ He is dressed in high-fashion dark attire - either a navy-blue pinstripe suit or
   <button class="btn copy-btn" onclick="copyPrompt(this)">Copy Prompt</button>
 </article>
 
+      <!-- ========== PROMPT CARD 12 ========== -->
 <article class="card">
   <img src="assets/Prompt_12.png" alt="Prompt 12">
   <h3>Prompt 12</h3>
@@ -143,6 +164,7 @@ He is dressed in high-fashion dark attire - either a navy-blue pinstripe suit or
   <button class="btn copy-btn" onclick="copyPrompt(this)">Copy Prompt</button>
 </article>
 
+      <!-- ========== PROMPT CARD 13 ========== -->
 <article class="card">
   <img src="assets/Prompt_13.png" alt="Prompt 13">
   <h3>Prompt 13</h3>
@@ -152,6 +174,7 @@ He is dressed in high-fashion dark attire - either a navy-blue pinstripe suit or
   <button class="btn copy-btn" onclick="copyPrompt(this)">Copy Prompt</button>
 </article>
 
+      <!-- ========== PROMPT CARD 14 ========== -->
 <article class="card">
   <img src="assets/Prompt_14.png" alt="Prompt 14">
   <h3>Prompt 14</h3>
@@ -161,6 +184,7 @@ He is dressed in high-fashion dark attire - either a navy-blue pinstripe suit or
   <button class="btn copy-btn" onclick="copyPrompt(this)">Copy Prompt</button>
 </article>
 
+      <!-- ========== PROMPT CARD 15 ========== -->
 <article class="card">
   <img src="assets/Prompt_15.png" alt="Prompt 15">
   <h3>Prompt 15</h3>
@@ -170,6 +194,7 @@ He is dressed in high-fashion dark attire - either a navy-blue pinstripe suit or
   <button class="btn copy-btn" onclick="copyPrompt(this)">Copy Prompt</button>
 </article>
 
+      <!-- ========== PROMPT CARD 16 ========== -->
 <article class="card">
   <img src="assets/Prompt_16.png" alt="Prompt 16">
   <h3>Prompt 16</h3>
@@ -179,6 +204,7 @@ He is dressed in high-fashion dark attire - either a navy-blue pinstripe suit or
   <button class="btn copy-btn" onclick="copyPrompt(this)">Copy Prompt</button>
 </article>
 
+      <!-- ========== PROMPT CARD 17 ========== -->
 <article class="card">
   <img src="assets/Prompt_17.png" alt="Prompt 17">
   <h3>Prompt 17</h3>
@@ -188,6 +214,7 @@ He is dressed in high-fashion dark attire - either a navy-blue pinstripe suit or
   <button class="btn copy-btn" onclick="copyPrompt(this)">Copy Prompt</button>
 </article>
 
+      <!-- ========== PROMPT CARD 18 ========== -->
 <article class="card">
   <img src="assets/Prompt_18.png" alt="Prompt 18">
   <h3>Prompt 18</h3>
@@ -197,6 +224,7 @@ He is dressed in high-fashion dark attire - either a navy-blue pinstripe suit or
   <button class="btn copy-btn" onclick="copyPrompt(this)">Copy Prompt</button>
 </article>
 
+      <!-- ========== PROMPT CARD 19 ========== -->
 <article class="card">
   <img src="assets/Prompt_19.png" alt="Prompt 19">
   <h3>Prompt 19</h3>
@@ -207,6 +235,7 @@ Exact same face based on the reference image!
   <button class="btn copy-btn" onclick="copyPrompt(this)">Copy Prompt</button>
 </article>
 
+      <!-- ========== PROMPT CARD 20 ========== -->
 <article class="card">
   <img src="assets/Prompt_20.png" alt="Prompt 20">
   <h3>Prompt 20</h3>
@@ -219,20 +248,21 @@ Exact same face based on the reference image!
     </section>
   </main>
 
-  <!-- Page Numbers -->
+    <!-- ========== PAGINATION SECTION ========== -->
   <div class="pagination">
-  <a href="index.html" class="active">1</a>
-  <a href="pages/page2.html">2</a>
-  <a href="pages/page3.html">3</a>
+    <a href="index.html" class="active">1</a>
+    <a href="pages/page2.html">2</a>
+    <a href="pages/page3.html">3</a>
   </div>
-  
+
+  <!-- ========== FOOTER SECTION ========== -->
   <footer class="site-footer">
     <div class="container">
       <small>Created by alihasnain.designs</small>
     </div>
   </footer>
 
-  <!-- Copy Function -->
+  <!-- ========== COPY PROMPT SCRIPT ========== -->
   <script>
     function copyPrompt(button) {
       const text = button.parentElement.querySelector(".prompt-text").innerText;
@@ -243,18 +273,16 @@ Exact same face based on the reference image!
     }
   </script>
 
+  <!-- ========== TOGGLE PROMPT SCRIPT ========== -->
   <script>
-  const toggleButtons = document.querySelectorAll('.toggle-btn');
-
-  toggleButtons.forEach(button => {
-    button.addEventListener('click', () => {
-      const promptText = button.parentElement.nextElementSibling;
-      promptText.classList.toggle('show');
-      button.classList.toggle('active');
+    const toggleButtons = document.querySelectorAll('.toggle-btn');
+    toggleButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const promptText = button.parentElement.nextElementSibling;
+        promptText.classList.toggle('show');
+        button.classList.toggle('active');
+      });
     });
-  });
   </script>
-  
-  </div>
 </body>
 </html>
