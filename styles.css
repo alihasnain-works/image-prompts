@@ -289,14 +289,6 @@ body{
 /* ===========================
    15. ROUNDED ARROW STYLE
    =========================== */
-.arrow-icon {
-  width: 22px;
-  height: 22px;
-  fill: white;                     /* Solid white arrow */
-  transform-origin: center;
-  transition: transform 0.3s ease-in-out;
-  filter: drop-shadow(0 0 2px rgba(255,255,255,0.5));
-}
 
 /* When active → arrow rotates upward */
 .toggle-btn.active .arrow-icon {
