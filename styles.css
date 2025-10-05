@@ -281,13 +281,15 @@ body{
   fill: white;          /* filled look */
   stroke: none;         /* border hatt gaya */
   transition: transform 0.3s ease-in-out;
-  
-  /* perfect equilateral triangle */
-  rx: 1.5; /* thoda curve */
 }
+  .arrow-icon path {
+  d: path("M6 9L12 15L18 9Z"); /* perfect equilateral triangle */
+  rx: 1.5; /* thoda curve */
+  }
+
   {
   transform-origin: center; /* ensures smooth rotation */
-  top: 0px; /* thoda adjust taake center me aaye */
+  top: -2px; /* thoda adjust taake center me aaye */
   filter: drop-shadow(0 0 2px rgba(255,255,255,0.5));
 }
 
