@@ -265,9 +265,16 @@ body{
 .toggle-btn {
   background: none;
   border: none;
-  color: white;
-  font-size: 18px;
+  color: var(--text);
+  font-size: 22px;   /* dono arrows ke liye size barabar */
   cursor: pointer;
+  padding: 0;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;  /* ek choti si fixed width */
+  height: 28px; /* taake dono arrows equal box me aayein */
   transition: transform 0.3s ease;
 }
 
