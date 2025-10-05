@@ -276,14 +276,14 @@ body{
 }
 /* SVG styling */
 .arrow-icon {
-  width: 24px;
-  height: 24px;
-  stroke: white;
-  stroke-width: 2.5;
-  fill: none;
-  stroke-linecap: round;
-  stroke-linejoin: round;
+  width: 20px;
+  height: 20px;
+  fill: white;          /* filled look */
+  stroke: none;         /* border hatt gaya */
   transition: transform 0.3s ease-in-out;
+  
+  /* perfect equilateral triangle */
+  rx: 1.5; /* thoda curve */
 }
   {
   transform-origin: center; /* ensures smooth rotation */
