@@ -297,8 +297,34 @@ body{
 }
 .prompt-header {
   display: flex;
-  justify-content: space-between; /* title left, arrow right */
   align-items: center;
+  justify-content: space-between;
+}
+
+/* Triangle shape */
+.triangle-button {
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 10px solid white;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Rotate arrow when active */
+.triangle-button.active {
+  transform: rotate(180deg);
+}
+
+/* Prompt box hidden by default */
+.prompt-box {
+  display: none;
+  margin-top: 10px;
+}
+
+.prompt-box.show {
+  display: block;
 }
 
 .site-footer{padding:22px 0;text-align:center;color:var(--muted);font-size:13px}
