@@ -287,8 +287,13 @@ body{
    15. ROTATION
    =========================== */
 /* When active → arrow rotates upward */
-.toggle-btn.active .arrow-icon {
+.toggle-btn.active {
   transform: rotate(180deg);
+}
+
+/* --- Hover Effect (Subtle Highlight) --- */
+.toggle-btn:hover {
+  filter: drop-shadow(0 0 3px rgba(255,255,255,0.8));
 }
 
 /* ===========================
