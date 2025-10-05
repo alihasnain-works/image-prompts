@@ -262,63 +262,61 @@ body{
 }
 
 /* ===========================
-   1. TOGGLE BUTTON BASE STYLE
+   1. TOGGLE BUTTON STYLE
    =========================== */
 .toggle-btn {
-  background: none;              /* Transparent background */
-  border: none;                  /* No border */
-  cursor: pointer;               /* Pointer cursor on hover */
-  padding: 4px;                  /* Small space inside button */
-  display: flex;                 /* Center icon horizontally & vertically */
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 10px;             /* Gap between text and arrow */
-  transition: transform 0.3s ease-in-out; /* Smooth animation */
+  margin-left: 10px;
+  transition: transform 0.3s ease-in-out;
 }
 
 /* ===========================
-   2. ARROW (SVG ICON) STYLE
+   2. ROUNDED ARROW STYLE
    =========================== */
 .arrow-icon {
-  width: 22px;                   /* Arrow size */
+  width: 22px;
   height: 22px;
-  fill: white;                   /* Arrow color (solid white) */
-  stroke: none;                  /* Remove any outline stroke */
-  transform-origin: center;      /* Rotate from center */
+  fill: white;                     /* Solid white arrow */
+  transform-origin: center;
   transition: transform 0.3s ease-in-out;
-  filter: drop-shadow(0 0 2px rgba(255,255,255,0.5)); /* Soft glow look */
+  filter: drop-shadow(0 0 2px rgba(255,255,255,0.5));
 }
 
-/* When user clicks, arrow rotates 180 degrees (down → up) */
+/* When active → arrow rotates upward */
 .toggle-btn.active .arrow-icon {
   transform: rotate(180deg);
 }
 
 /* ===========================
-   3. PROMPT HEADER
+   3. HEADER ALIGNMENT
    =========================== */
 .prompt-header {
-  display: flex;                 /* Title left, arrow right */
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  overflow: visible;             /* Prevents arrow from cutting */
-  padding-bottom: 4px;           /* Some breathing space below */
+  overflow: visible;
+  padding-bottom: 4px;
 }
 
 /* ===========================
-   4. PROMPT TEXT (HIDDEN/SHOW)
+   4. TOGGLE TEXT BOX
    =========================== */
 .prompt-text {
-  display: none;                 /* Hidden by default */
+  display: none;
   margin-top: 8px;
-  height: 90px;                  /* Fixed box height */
-  overflow-y: auto;              /* Scroll when text long */
+  height: 90px;
+  overflow-y: auto;
   transition: all 0.3s ease;
 }
-
-/* When active class added via JS */
+/* <-- Show When Active --> */
 .prompt-text.show {
-  display: block;                /* Makes text box visible */
+  display: block;
 }
 
 .site-footer{padding:22px 0;text-align:center;color:var(--muted);font-size:13px}
