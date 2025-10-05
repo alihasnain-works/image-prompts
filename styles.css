@@ -266,7 +266,7 @@ body{
   background: none;   /* background hata diya */
   border: none;       /* border bhi hata diya */
   color: var(--text); /* text color follow karega */
-  font-size: 22px;   /* dono arrows ke liye size barabar */
+  font-size: 32px;   /* dono arrows ke liye size barabar */
   cursor: pointer;
   padding: 0;         /* extra space hata diya */
   line-height: 1;
