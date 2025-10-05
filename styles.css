@@ -263,19 +263,18 @@ body{
 
 /* Toggle button styling */
 .toggle-btn {
-  background: none;
-  border: none;
-  color: var(--text);
+  background: none;   /* background hata diya */
+  border: none;       /* border bhi hata diya */
+  color: var(--text); /* text color follow karega */
   font-size: 22px;   /* dono arrows ke liye size barabar */
   cursor: pointer;
-  padding: 0;
+  padding: 0;         /* extra space hata diya */
   line-height: 1;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 28px;  /* ek choti si fixed width */
   height: 28px; /* taake dono arrows equal box me aayein */
-  transition: transform 0.3s ease;
 }
 
 /* Rotate arrow when active */
@@ -300,15 +299,6 @@ body{
   display: flex;
   justify-content: space-between; /* title left, arrow right */
   align-items: center;
-}
-
-.toggle-btn {
-  background: none;   /* background hata diya */
-  border: none;       /* border bhi hata diya */
-  font-size: 20px;    /* arrow size thoda readable */
-  cursor: pointer;
-  color: var(--text); /* text color follow karega */
-  padding: 0;         /* extra space hata diya */
 }
 
 .site-footer{padding:22px 0;text-align:center;color:var(--muted);font-size:13px}
