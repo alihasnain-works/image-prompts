@@ -266,15 +266,15 @@ body{
   background: none;   /* background hata diya */
   border: none;       /* border bhi hata diya */
   color: var(--text); /* text color follow karega */
-  font-size: 32px;   /* dono arrows ke liye size barabar */
+  font-size: 36px;   /* dono arrows ke liye size barabar */
   cursor: pointer;
   padding: 0;         /* extra space hata diya */
   line-height: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 28px;  /* ek choti si fixed width */
-  height: 28px; /* taake dono arrows equal box me aayein */
+  width: 22px;  /* ek choti si fixed width */
+  height: 22px; /* taake dono arrows equal box me aayein */
 }
 
 /* Rotate arrow when active */
