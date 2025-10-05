@@ -262,18 +262,30 @@ body{
 /* ===========================
    14. TOGGLE BUTTON STYLE
    =========================== */
+/* --- Base Triangle Style --- */
 .toggle-btn {
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 10px;
-  transition: transform 0.3s ease-in-out;
-}
+  width: 0;
+  height: 0;
 
+  /* Creates the triangle shape */
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 10px solid white;
+
+  /* Slightly rounded corners for softer edges */
+  border-radius: 2px;
+
+  /* Adds a soft glow and smooth blur for a refined look */
+  filter: drop-shadow(0 0 1px rgba(255,255,255,0.7)) blur(0.4px);
+
+  /* Cursor and animation setup */
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+
+  /* Keeps shape stable inside flex containers */
+  flex-shrink: 0;
+  margin-left: 10px;
+}
 /* ===========================
    15. ROUNDED ARROW STYLE
    =========================== */
