@@ -264,8 +264,8 @@ body{
    =========================== */
 /* --- Base Triangle Style --- */
 .toggle-btn {
-  width: auto;
-  height: 10px;
+  width: 0;
+  height: 0;
 
   /* Creates the triangle shape */
   border-left: 7px solid transparent;
@@ -284,9 +284,8 @@ body{
   margin-left: 10px;
 }
 /* ===========================
-   15. ROUNDED ARROW STYLE
+   15. ROTATION
    =========================== */
-
 /* When active → arrow rotates upward */
 .toggle-btn.active .arrow-icon {
   transform: rotate(180deg);
