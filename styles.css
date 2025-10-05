@@ -263,18 +263,13 @@ body{
 
 /* Toggle button styling */
 .toggle-btn {
-  background: none;   /* background hata diya */
-  border: none;       /* border bhi hata diya */
-  color: var(--text); /* text color follow karega */
-  font-size: 36px;   /* dono arrows ke liye size barabar */
+  width: 0; /* ek choti si fixed width */
+  height: 0; /* taake dono arrows equal box me aayein */
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 8px solid white; /* white triangle */
   cursor: pointer;
-  padding: 0;         /* extra space hata diya */
-  line-height: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 22px;  /* ek choti si fixed width */
-  height: 22px; /* taake dono arrows equal box me aayein */
+  transition: transform 0.3s ease-in-out;
 }
 
 /* Rotate arrow when active */
