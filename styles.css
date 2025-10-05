@@ -266,21 +266,31 @@ body{
 .toggle-btn {
   background: none;
   border: none;
-  width: 0;
-  height: 0;
-  border-top: 16px solid white; /* thoda bada arrow */
-  border-left: 12px solid transparent;
-  border-right: 12px solid transparent;
-  border-radius: 6px; /* rounded corner effect */
   cursor: pointer;
-  transition: transform 0.3s ease-in-out;
-  flex-shrink: 0;
+  padding: 4px;
+  display: flex;
+  align-items: center;
   margin-left: 10px;
-  display: inline-block;
+  justify-content: center;
+  transition: transform 0.3s ease-in-out;
+}
+/* SVG styling */
+.arrow-icon {
+  width: 24px;
+  height: 24px;
+  stroke: white;
+  stroke-width: 2.5;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: transform 0.3s ease-in-out;
+}
+  {
   transform-origin: center; /* ensures smooth rotation */
   top: 0px; /* thoda adjust taake center me aaye */
   filter: drop-shadow(0 0 2px rgba(255,255,255,0.5));
 }
+
 /* Fix for cutting issue */
 .prompt-header {
   display: flex;
