@@ -262,28 +262,30 @@ body{
 }
 
 /* Toggle button styling */
+/* Toggle button styling */
 .toggle-btn {
-  background: none;   /* background hata diya */
-  border: none;       /* border bhi hata diya */
-  width: 0; /* ek choti si fixed width */
-  height: 0; /* taake dono arrows equal box me aayein */
-  border-top: 10px solid white;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  border-radius: 2px; /* thoda shape soft ho jata hai */
-  filter: blur(0.3px);
+  background: none;
+  border: none;
+  width: 0;
+  height: 0;
+  border-top: 12px solid white; /* thoda bada arrow */
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-radius: 4px; /* rounded corner effect */
   cursor: pointer;
-  transition: transform 0.3s ease-in-out, filter 0.2s ease-in-out;
-  flex-shrink: 0; /* prevent shrinking inside flex */
-  margin-left: 10px; /* thoda gap title se */
-  
-  /* Soft rounded edges trick */
-  filter: drop-shadow(0 0 1px rgba(255,255,255,0.6)) blur(0.4px);
+  transition: transform 0.3s ease-in-out;
+  flex-shrink: 0;
+  margin-left: 10px;
+  display: inline-block;
+  position: relative;
+  top: 2px; /* thoda adjust taake center me aaye */
+  filter: drop-shadow(0 0 2px rgba(255,255,255,0.5));
 }
 
 /* Rotate arrow when active */
 .toggle-btn.active {
   transform: rotate(180deg);
+  top: 0; /* rotation ke baad bhi center alignment maintain ho */
 }
 
 /* Hidden by default */
