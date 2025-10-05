@@ -264,8 +264,8 @@ body{
    =========================== */
 /* --- Base Triangle Style --- */
 .toggle-btn {
-  width: 0;
-  height: 0;
+  width: auto;
+  height: 10px;
 
   /* Creates the triangle shape */
   border-left: 7px solid transparent;
@@ -274,9 +274,6 @@ body{
 
   /* Slightly rounded corners for softer edges */
   border-radius: 2px;
-
-  /* Adds a soft glow and smooth blur for a refined look */
-  filter: drop-shadow(0 0 1px rgba(255,255,255,0.7)) blur(0.4px);
 
   /* Cursor and animation setup */
   cursor: pointer;
