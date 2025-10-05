@@ -268,9 +268,9 @@ body{
   height: 0;
 
   /* Creates the triangle shape */
-  border-left: 7px solid transparent;
-  border-right: 7px solid transparent;
-  border-top: 10px solid white;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 13px solid white;
 
   /* Slightly rounded corners for softer edges */
   border-radius: 2px;
