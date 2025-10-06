@@ -315,8 +315,11 @@ body{
   margin-top: 8px;  
   height: 90px;  
   overflow-y: auto;  
-  transition: all 0.3s ease;  
-}  
+  overflow: hidden;
+  transition: height 0.4s ease, opacity 0.4s ease, margin 0.4s ease;
+  margin-top: 0;
+  padding: 0 10px;
+}
 /* <-- Show When Active --> */  
 .prompt-text.show {  
   display: block;  
