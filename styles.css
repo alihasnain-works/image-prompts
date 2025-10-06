@@ -281,7 +281,7 @@ body{
 
   /* Keeps shape stable inside flex containers */
   flex-shrink: 0;
-  margin-left: 16px;
+  margin-left: 10px;
 }
 /* ===========================
    15. ROTATION
@@ -312,7 +312,7 @@ body{
    =========================== */
 .prompt-text {
   display: none;
-  margin-top: 8px;
+  margin-top: 12px;
   height: 90px;
   overflow-y: auto;
   transition: all 0.3s ease;
