@@ -320,7 +320,7 @@ body{
 
 /* Show state */
 .prompt-text.show {
-  margin-top: 8px;        /* thoda gap heading se */
+  margin-top: 2px;        /* thoda gap heading se */
   opacity: 1;
   height: 300px;        /* content ke hisaab se adjust karo */
 }
