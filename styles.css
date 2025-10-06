@@ -273,7 +273,7 @@ body{
   border-top: 13px solid white;
 
   /* Slightly rounded corners for softer edges */
-  border-radius: 8px;
+  border-radius: 2px;
 
   /* Cursor and animation setup */
   cursor: pointer;
