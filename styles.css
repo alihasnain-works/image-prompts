@@ -320,9 +320,9 @@ body{
 
 /* Show state */
 .prompt-text.show {
-  
+  margin-top: 8px;        /* thoda gap heading se */
   opacity: 1;
-  
+  height: auto;       /* content ke hisaab se adjust karo */
 }
 
 .site-footer{padding:22px 0;text-align:center;color:var(--muted);font-size:13px}
