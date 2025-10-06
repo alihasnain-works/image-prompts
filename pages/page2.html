@@ -295,20 +295,21 @@ Face must match the reference image of me.
     </section>
   </main>
 
-  <!-- Page Numbers -->
+  <!-- ========== PAGINATION SECTION ========== -->
   <div class="pagination">
     <a href="../index.html">1</a>
     <a href="page2.html" class="active">2</a>
-    <a href="page3.html">3</a>
+    <a href="pages/page3.html">3</a>
   </div>
-  
+
+  <!-- ========== FOOTER SECTION ========== -->
   <footer class="site-footer">
     <div class="container">
       <small>Created by alihasnain.designs</small>
     </div>
   </footer>
 
-  <!-- Copy Function -->
+  <!-- ========== COPY PROMPT SCRIPT ========== -->
   <script>
     function copyPrompt(button) {
       const text = button.parentElement.querySelector(".prompt-text").innerText;
@@ -317,6 +318,18 @@ Face must match the reference image of me.
         setTimeout(() => button.innerText = "Copy Prompt", 2000);
       });
     }
+  </script>
+
+  <!-- ========== TOGGLE PROMPT SCRIPT ========== -->
+  <script>
+    const toggleButtons = document.querySelectorAll('.toggle-btn');
+    toggleButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const promptText = button.parentElement.nextElementSibling;
+        promptText.classList.toggle('show');
+        button.classList.toggle('active');
+      });
+    });
   </script>
 </body>
   </html>
