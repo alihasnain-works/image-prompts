@@ -1,37 +1,37 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <!-- ========== META & TITLE SECTION ========== -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>All Trending Prompts</title>
-  <link rel="stylesheet" href="styles.css" />
+  <!-- ========== META & TITLE SECTION ========== -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>All Trending Prompts</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <!-- ========== HEADER SECTION ========== -->
-  <header class="site-header">
-    <div class="container">
-      <h1 class="brand">All Trending Prompts</h1>
-      <link rel="stylesheet" href="../styles.css" />
-      <p class="tag">
-        <img src="../assets/instagram_logo.png" alt="Instagram" class="instagram-logo">
-        alihasnain.designs
-      </p>
-    </div>
-  </header>
+  <!-- ========== HEADER SECTION ========== -->
+  <header class="site-header">
+    <div class="container">
+      <h1 class="brand">All Trending Prompts</h1>
+      <link rel="stylesheet" href="../styles.css" />
+      <p class="tag">
+        <img src="../assets/instagram_logo.png" alt="Instagram" class="instagram-logo">
+        alihasnain.designs
+      </p>
+    </div>
+  </header>
 
-  <!-- ========== MAIN CONTENT SECTION ========== --> 
-  <main class="container main-content">
+  <!-- ========== MAIN CONTENT SECTION ========== -->
+  <main class="container main-content">
 
-    <!-- ========== HERO SECTION ========== -->
-    <section class="hero">
-      <h2>Explore | Create | Share</h2>
-      <p class="lead">Simple gallery style page for prompts</p>
-    </section>
+    <!-- ========== HERO SECTION ========== -->
+    <section class="hero">
+      <h2>Explore | Create | Share</h2>
+      <p class="lead">Simple gallery style page for prompts</p>
+    </section>
 
-    <!-- ========== PROMPT CARDS SECTION ========== -->
-    <section class="cards">
+    <!-- ========== PROMPT CARDS SECTION ========== -->
+    <section class="cards">
 
       <!-- ========== PROMPT CARD 41 ========== -->
       <article class="card">
@@ -302,41 +302,41 @@ The perspective is slightly low-angle, with blurred purple flower field in the f
     </section>
   </main>
 
-  <!-- ========== PAGINATION SECTION ========== -->
-  <div class="pagination">
-    <a href="page2.html">2</a>
+  <!-- ========== PAGINATION SECTION ========== -->
+  <div class="pagination">
+    <a href="page2.html">2</a>
     <a href="page3.html" class="active">3</a>
     <a href="page4.html">4</a>
-  </div>
+  </div>
 
-  <!-- ========== FOOTER SECTION ========== -->
-  <footer class="site-footer">
-    <div class="container">
-      <small>Created by alihasnain.designs</small>
-    </div>
-  </footer>
+  <!-- ========== FOOTER SECTION ========== -->
+  <footer class="site-footer">
+    <div class="container">
+      <small>Created by alihasnain.designs</small>
+    </div>
+  </footer>
 
-  <!-- ========== COPY PROMPT SCRIPT ========== -->
-  <script>
-    function copyPrompt(button) {
-      const text = button.parentElement.querySelector(".prompt-text").innerText;
-      navigator.clipboard.writeText(text).then(() => {
-        button.innerText = "Copied! ✅";
-        setTimeout(() => button.innerText = "Copy Prompt", 2000);
-      });
-    }
-  </script>
+  <!-- ========== COPY PROMPT SCRIPT ========== -->
+  <script>
+    function copyPrompt(button) {
+      const text = button.parentElement.querySelector(".prompt-text").innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        button.innerText = "Copied! ✅";
+        setTimeout(() => button.innerText = "Copy Prompt", 2000);
+      });
+    }
+  </script>
 
-  <!-- ========== TOGGLE PROMPT SCRIPT ========== -->
-  <script>
-    const toggleButtons = document.querySelectorAll('.toggle-btn');
-    toggleButtons.forEach(button => {
-      button.addEventListener('click', () => {
-        const promptText = button.parentElement.nextElementSibling;
-        promptText.classList.toggle('show');
-        button.classList.toggle('active');
-      });
-    });
-  </script>
+  <!-- ========== TOGGLE PROMPT SCRIPT ========== -->
+  <script>
+    const toggleButtons = document.querySelectorAll('.toggle-btn');
+    toggleButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const promptText = button.parentElement.nextElementSibling;
+        promptText.classList.toggle('show');
+        button.classList.toggle('active');
+      });
+    });
+  </script>
 </body>
-  </html>
+</html>
