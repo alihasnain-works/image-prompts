@@ -311,7 +311,7 @@ body{
    17. TOGGLE TEXT BOX
    =========================== */
 .prompt-text {
-  max-height: 0;           /* start hidden */
+  max-height: 300px;           /* start hidden */
   opacity: 0;              /* transparent */
   overflow: hidden;        /* content clip kare */
   margin-top: 0;           /* animation ke liye */
