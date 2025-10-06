@@ -315,11 +315,12 @@ body{
   margin-top: 8px;  
   height: 90px;  
   overflow-y: auto;  
-  overflow: hidden;
-  transition: height 0.4s ease, opacity 0.4s ease, margin 0.4s ease;
-  margin-top: 0;
-  padding: 0 10px;
-}
+  transition: all 0.3s ease;  
+}  
+/* <-- Show When Active --> */  
+.prompt-text.show {  
+  display: block;  
+}  
 /* <-- Show When Active --> */  
 .prompt-text.show {  
   display: block;  
