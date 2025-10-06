@@ -1,37 +1,37 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <!-- ========== META & TITLE SECTION ========== -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>All Trending Prompts</title>
-  <link rel="stylesheet" href="styles.css" />
+  <!-- ========== META & TITLE SECTION ========== -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>All Trending Prompts</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <!-- ========== HEADER SECTION ========== -->
-  <header class="site-header">
-    <div class="container">
-      <h1 class="brand">All Trending Prompts</h1>
-      <link rel="stylesheet" href="../styles.css" />
-      <p class="tag">
-        <img src="../assets/instagram_logo.png" alt="Instagram" class="instagram-logo">
-        alihasnain.designs
-      </p>
-    </div>
-  </header>
+  <!-- ========== HEADER SECTION ========== -->
+  <header class="site-header">
+    <div class="container">
+      <h1 class="brand">All Trending Prompts</h1>
+      <link rel="stylesheet" href="../styles.css" />
+      <p class="tag">
+        <img src="../assets/instagram_logo.png" alt="Instagram" class="instagram-logo">
+        alihasnain.designs
+      </p>
+    </div>
+  </header>
 
-  <!-- ========== MAIN CONTENT SECTION ========== --> 
-  <main class="container main-content">
+  <!-- ========== MAIN CONTENT SECTION ========== -->
+  <main class="container main-content">
 
-    <!-- ========== HERO SECTION ========== -->
-    <section class="hero">
-      <h2>Explore | Create | Share</h2>
-      <p class="lead">Simple gallery style page for prompts</p>
-    </section>
+    <!-- ========== HERO SECTION ========== -->
+    <section class="hero">
+      <h2>Explore | Create | Share</h2>
+      <p class="lead">Simple gallery style page for prompts</p>
+    </section>
 
-    <!-- ========== PROMPT CARDS SECTION ========== -->
-    <section class="cards">
+    <!-- ========== PROMPT CARDS SECTION ========== -->
+    <section class="cards">
 
       <!-- ========== PROMPT CARD 41 ========== -->
       <article class="card">
@@ -172,8 +172,8 @@ Note : Just replace "boy" and the brand 'Ali Hasnain'.
     <div class="toggle-btn" onclick="togglePrompt(this)"></div>
   </div>
   <p class="prompt-text">
-    Hyper-realistic portrait for a luxury campaign, an elegant young man holds a blue diamond in front of his right eye with some distance from his eye. The jewel emits brilliant reflections that illuminate part of his face with a bluish tone, conveying exclusivity and power. The dark, minimalist background highlights the gemstone's brilliance. He has an expression of confidence. Sophisticated style, refined lighting, and a premium atmosphere." Ultra-realistic, cinematic image in native 4K. Close-up portrait lens
-  </p>
+    Hyper-realistic portrait for a luxury campaign, an elegant young man holds a blue diamond in front of his right eye with some distance from his eye. The jewel emits brilliant reflections that illuminate part of his face with a bluish tone, conveying exclusivity and power. The dark, minimalist background highlights the gemstone's brilliance. He has an expression of confidence. Sophisticated style, refined lighting, and a premium atmosphere. Ultra-realistic, cinematic image in native 4K. Close-up portrait lens.
+  </p>
   <button class="btn copy-btn" onclick="copyPrompt(this)">Copy Prompt</button>
 </article>
 
@@ -186,6 +186,7 @@ Note : Just replace "boy" and the brand 'Ali Hasnain'.
   </div>
   <p class="prompt-text">
     Ultra realistic, cinematic indoor portrait of a young man sitting relaxed on a brown leather sofa. He wears a plain light grey hoodie and black pants, and light gray short socks, holding a closed book in his lap. His legs are casually crossed, and one arm rests on the sofa armrest. A tall floor lamp with a beige lampshade glows warmly on the left side, casting soft golden light on the dark matte wall. On the right side, a large indoor plant with broad green leaves is visible. Cozy, moody atmosphere, natural skin texture, sharp details, professional studio lighting. Face must exactly match the provided reference image.
+  </p>
    <button class="btn copy-btn" onclick="copyPrompt(this)">Copy Prompt</button>
 </article>
 
@@ -210,8 +211,8 @@ Note : Just replace "boy" and the brand 'Ali Hasnain'.
     <div class="toggle-btn" onclick="togglePrompt(this)"></div>
   </div>
   <p class="prompt-text">
-    A cinematic, realistic photo of a young man sitting under a tree in a grassy field. He leans back against the trunk, eyes closed, wearing a loose white shirt and dark pants and casual sneakers. The grass around him is tall and green, swaying slightly in the breeze. The tree is bare with rough branches extending outward, while the background shows a soft horizon of distant trees under a pale, overcast sky. Natural lighting, soft tones, serene and contemplative mood.
-  </p>
+A cinematic, realistic photo of a young man sitting under a tree in a grassy field. He leans back against the trunk, eyes closed, wearing a loose white shirt and dark pants and casual sneakers. The grass around him is tall and green, swaying slightly in the breeze. The tree is bare with rough branches extending outward, while the background shows a soft horizon of distant trees under a pale, overcast sky. Natural lighting, soft tones, serene and contemplative mood.
+</p>
   <button class="btn copy-btn" onclick="copyPrompt(this)">Copy Prompt</button>
 </article>
 
@@ -302,41 +303,41 @@ The perspective is slightly low-angle, with blurred purple flower field in the f
     </section>
   </main>
 
-  <!-- ========== PAGINATION SECTION ========== -->
-  <div class="pagination">
-    <a href="page2.html">2</a>
+  <!-- ========== PAGINATION SECTION ========== -->
+  <div class="pagination">
+    <a href="page2.html">2</a>
     <a href="page3.html" class="active">3</a>
     <a href="page4.html">4</a>
-  </div>
+  </div>
 
-  <!-- ========== FOOTER SECTION ========== -->
-  <footer class="site-footer">
-    <div class="container">
-      <small>Created by alihasnain.designs</small>
-    </div>
-  </footer>
+  <!-- ========== FOOTER SECTION ========== -->
+  <footer class="site-footer">
+    <div class="container">
+      <small>Created by alihasnain.designs</small>
+    </div>
+  </footer>
 
-  <!-- ========== COPY PROMPT SCRIPT ========== -->
-  <script>
-    function copyPrompt(button) {
-      const text = button.parentElement.querySelector(".prompt-text").innerText;
-      navigator.clipboard.writeText(text).then(() => {
-        button.innerText = "Copied! ✅";
-        setTimeout(() => button.innerText = "Copy Prompt", 2000);
-      });
-    }
-  </script>
+  <!-- ========== COPY PROMPT SCRIPT ========== -->
+  <script>
+    function copyPrompt(button) {
+      const text = button.parentElement.querySelector(".prompt-text").innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        button.innerText = "Copied! ✅";
+        setTimeout(() => button.innerText = "Copy Prompt", 2000);
+      });
+    }
+  </script>
 
-  <!-- ========== TOGGLE PROMPT SCRIPT ========== -->
-  <script>
-    const toggleButtons = document.querySelectorAll('.toggle-btn');
-    toggleButtons.forEach(button => {
-      button.addEventListener('click', () => {
-        const promptText = button.parentElement.nextElementSibling;
-        promptText.classList.toggle('show');
-        button.classList.toggle('active');
-      });
-    });
-  </script>
+  <!-- ========== TOGGLE PROMPT SCRIPT ========== -->
+  <script>
+    const toggleButtons = document.querySelectorAll('.toggle-btn');
+    toggleButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const promptText = button.parentElement.nextElementSibling;
+        promptText.classList.toggle('show');
+        button.classList.toggle('active');
+      });
+    });
+  </script>
 </body>
-  </html>
+    </html>
