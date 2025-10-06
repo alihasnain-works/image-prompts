@@ -279,10 +279,12 @@ Exact same face based on the reference image!
     // hide
     promptText.style.height = "0";
     promptText.style.opacity = "0";
+    promptText.style.marginTop = "0";
   } else {
     // show
-    promptText.style.height = promptText.scrollHeight + "px"; // content ke height ke hisaab se
+    promptText.style.height = promptText.scrollHeight + "px"; // correct height
     promptText.style.opacity = "1";
+    promptText.style.marginTop = "8px";
   }
     }
   </script>
