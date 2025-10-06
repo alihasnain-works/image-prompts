@@ -271,33 +271,15 @@ Exact same face based on the reference image!
 
   <!-- ========== TOGGLE PROMPT SCRIPT ========== -->
   <script>
-    function togglePrompt(button) {
-  const promptText = button.parentElement.nextElementSibling;
-  const allPrompts = document.querySelectorAll('.prompt-text');
-
-  allPrompts.forEach(pt => {
-    if (pt !== promptText) {
-      pt.style.height = "0";
-      pt.style.opacity = "0";
-      pt.style.marginTop = "0";
-      pt.classList.remove("show");
-      pt.previousElementSibling.querySelector('.toggle-btn').classList.remove("active");
-    }
-  });
-
-  button.classList.toggle('active');
-  promptText.classList.toggle("show");
-
-  if (promptText.classList.contains("show")) {
-    promptText.style.height = promptText.scrollHeight + "px";
-    promptText.style.opacity = "1";
-    promptText.style.marginTop = "8px";
-  } else {
-    promptText.style.height = "0";
-    promptText.style.opacity = "0";
-    promptText.style.marginTop = "0";
-  }
-    }
+    const toggleButtons = document.querySelectorAll('.toggle-btn');
+    toggleButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const promptText = button.parentElement.nextElementSibling;
+        promptText.classList.toggle('show');
+        button.classList.toggle('active');
+      });
+    });
+  </script>
   </script>
 </body>
 </html>
