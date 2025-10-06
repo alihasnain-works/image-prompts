@@ -273,7 +273,7 @@ body{
   border-top: 13px solid white;
 
   /* Slightly rounded corners for softer edges */
-  border-radius: 2px;
+  border-radius: 8px;
 
   /* Cursor and animation setup */
   cursor: pointer;
@@ -310,21 +310,17 @@ body{
 /* ===========================
    17. TOGGLE TEXT BOX
    =========================== */
-.prompt-text {
-  max-height: 300px;           /* start hidden */
-  opacity: 0;              /* transparent */
-  overflow: hidden;        /* content clip kare */
-  margin-top: 0;           /* animation ke liye */
-  transition: max-height 0.4s ease, opacity 0.4s ease, margin-top 0.4s ease; /* smooth animation */
-}
-
-/* Show state */
-.prompt-text.show {
-  margin-top: 2px;        /* thoda gap heading se */
-  opacity: 1;
-  height: 300px;        /* content ke hisaab se adjust karo */
-}
-
+.prompt-text {  
+  display: none;  
+  margin-top: 8px;  
+  height: 90px;  
+  overflow-y: auto;  
+  transition: all 0.3s ease;  
+}  
+/* <-- Show When Active --> */  
+.prompt-text.show {  
+  display: block;  
+}  
 .site-footer{padding:22px 0;text-align:center;color:var(--muted);font-size:13px}
 @media (max-width:600px){
   .container{padding:16px}
