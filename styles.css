@@ -311,15 +311,18 @@ body{
    17. TOGGLE TEXT BOX
    =========================== */
 .prompt-text {
-  display: none;
-  margin-top: 12px;
-  height: 90px;
-  overflow-y: auto;
-  transition: all 0.3s ease;
+  max-height: 0;           /* start hidden */
+  opacity: 0;              /* transparent */
+  overflow: hidden;        /* content clip kare */
+  margin-top: 0;           /* animation ke liye */
+  transition: max-height 0.4s ease, opacity 0.4s ease, margin-top 0.4s ease; /* smooth animation */
 }
-/* <-- Show When Active --> */
+
+/* Show state */
 .prompt-text.show {
-  display: block;
+  max-height: 300px;       /* content ke hisaab se adjust karo */
+  opacity: 1;
+  margin-top: 12px;        /* thoda gap heading se */
 }
 
 .site-footer{padding:22px 0;text-align:center;color:var(--muted);font-size:13px}
