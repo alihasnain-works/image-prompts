@@ -40,6 +40,18 @@ body{
 .tag{margin:4px 0 0;color:var(--muted);font-size:13px}
 
 /* ===========================
+   HEADER LOGO STYLE
+   =========================== */
+.site-logo {
+  height: 50px;                 /* logo ki height control */
+  width: auto;                  /* proportion maintain rahe */
+  border-radius: var(--radius); /* thoda smooth rounded edges */
+  box-shadow: 0 6px 18px rgba(2,6,23,0.6); /* same shadow jesa .card me hai */
+  border: 1px solid rgba(255,255,255,0.03); /* subtle border like card */
+  vertical-align: middle;
+}
+
+/* ===========================
    4. INSTAGRAM LOGO RESPONSIVE STYLE
    =========================== */
 .instagram-logo {
