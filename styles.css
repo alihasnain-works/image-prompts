@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'Brasika Display';
+  font-family: 'Brasika';
   src: url('../assets/fonts/Brasika-Display-Regular.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
@@ -42,7 +42,7 @@ body{
   font-size: 32px;
   font-weight: 700;
   letter-spacing: 0.5px;
-  font-family: 'Brasika Display', sans-serif; /* sirf yahan apply hoga */
+  font-family: 'Brasika', sans-serif; /* sirf yahan apply hoga */
 }
 .tag{margin:4px 0 0;color:var(--muted);font-size:13px}
 
