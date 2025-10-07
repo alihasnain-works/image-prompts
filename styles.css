@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'Brasika Display';
+  src: url('../assets/fonts/brasika-display-trial.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
 /* ===========================
    1. ROOT VARIABLES
    =========================== */
@@ -31,11 +37,12 @@ body{
    3. HEADER SECTION
    =========================== */
 .site-header{padding:18px 0; text-align:center;}
-.brand{
-  margin:0;
-  font-size:32px;
-  font-weight:700;
-  letter-spacing:0.5px;
+.brand {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  font-family: 'Brasika Display', sans-serif; /* sirf yahan apply hoga */
 }
 .tag{margin:4px 0 0;color:var(--muted);font-size:13px}
 
