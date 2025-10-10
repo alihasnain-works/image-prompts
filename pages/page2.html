@@ -373,5 +373,32 @@ Face must match the reference image of me.
       });
     });
   </script>
+
+  <!-- ========== LOAD MORE SCRIPT ========== -->
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const cards = document.querySelectorAll("#promptCards .card");
+    const loadMoreBtn = document.getElementById("loadMoreBtn");
+
+    let visibleCount = 10;
+    const totalCards = cards.length;
+
+    cards.forEach((card, index) => {
+      card.style.display = index < visibleCount ? "block" : "none";
+    });
+
+    loadMoreBtn.addEventListener("click", () => {
+      for (let i = visibleCount; i < visibleCount + 10 && i < totalCards; i++) {
+        cards[i].style.display = "block";
+      }
+
+      visibleCount += 10;
+
+      if (visibleCount >= totalCards) {
+        loadMoreBtn.style.display = "none";
+      }
+    });
+  });
+</script>
 </body>
   </html>
