@@ -74,6 +74,16 @@ body{
   }
 }
 
+.insta-link {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.insta-link:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
 /* ===========================
    5. HERO SECTION
    =========================== */
