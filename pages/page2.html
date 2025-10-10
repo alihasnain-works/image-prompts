@@ -377,24 +377,31 @@ Face must match the reference image of me.
   <!-- ========== LOAD MORE SCRIPT ========== -->
 <script>
   document.addEventListener("DOMContentLoaded", function() {
-    const cards = document.querySelectorAll("#promptCards .card");
-    const loadMoreBtn = document.getElementById("loadMoreBtn");
+    const cards = document.querySelectorAll("#promptCards .card"); // sab cards select karo
+    const loadMoreBtn = document.getElementById("loadMoreBtn");   // button ka ID
 
-    let visibleCount = 10;
-    const totalCards = cards.length;
+    const cardsPerLoad = 10;  // ek baar me kitni posts dikhani hain
+    let visibleCount = cardsPerLoad;
 
+    // Pehle 10 cards dikhana
     cards.forEach((card, index) => {
-      card.style.display = index < visibleCount ? "block" : "none";
+      card.style.display = index < cardsPerLoad ? "block" : "none";
     });
 
+    // Agar 10 se kam cards hain to button hide kar do
+    if (cards.length <= cardsPerLoad) {
+      loadMoreBtn.style.display = "none";
+    }
+
+    // Button click hone par next 10 cards show karna
     loadMoreBtn.addEventListener("click", () => {
-      for (let i = visibleCount; i < visibleCount + 10 && i < totalCards; i++) {
+      for (let i = visibleCount; i < visibleCount + cardsPerLoad && i < cards.length; i++) {
         cards[i].style.display = "block";
       }
+      visibleCount += cardsPerLoad;
 
-      visibleCount += 10;
-
-      if (visibleCount >= totalCards) {
+      // Jab sab cards visible ho jayein → button hide
+      if (visibleCount >= cards.length) {
         loadMoreBtn.style.display = "none";
       }
     });
