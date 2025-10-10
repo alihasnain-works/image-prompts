@@ -380,35 +380,25 @@ Face must match the reference image of me.
     const cards = document.querySelectorAll("#promptCards .card");
     const loadMoreBtn = document.getElementById("loadMoreBtn");
 
-    const cardsPerLoad = 10;
-    let visibleCount = cardsPerLoad;
+    let visibleCount = 10;
+    const totalCards = cards.length;
 
-    // Pehle 10 cards dikhana
     cards.forEach((card, index) => {
-      card.style.display = index < cardsPerLoad ? "block" : "none";
+      card.style.display = index < visibleCount ? "block" : "none";
     });
 
-    // Agar cards hi 10 ya usse kam hain to button hide
-    if (!loadMoreBtn) return; // safety check
-    if (cards.length <= cardsPerLoad) {
-      loadMoreBtn.style.display = "none";
-    } else {
-      loadMoreBtn.style.display = "inline-block"; // show karo button
-    }
-
-    // Button click hone par next 10 cards show karo
     loadMoreBtn.addEventListener("click", () => {
-      for (let i = visibleCount; i < visibleCount + cardsPerLoad && i < cards.length; i++) {
+      for (let i = visibleCount; i < visibleCount + 10 && i < totalCards; i++) {
         cards[i].style.display = "block";
       }
-      visibleCount += cardsPerLoad;
 
-      // Agar sab cards visible ho gaye to button hide
-      if (visibleCount >= cards.length) {
+      visibleCount += 10;
+
+      if (visibleCount >= totalCards) {
         loadMoreBtn.style.display = "none";
       }
     });
   });
-        </script>
+</script>
 </body>
   </html>
