@@ -380,13 +380,20 @@ Face must match the reference image of me.
     const cards = document.querySelectorAll("#promptCards .card");
     const loadMoreBtn = document.getElementById("loadMoreBtn");
 
-    let visibleCount = 10;
+    let visibleCount = 10; // Pehle 10 show honge
     const totalCards = cards.length;
 
+    // Start me sirf pehle 10 show karna
     cards.forEach((card, index) => {
       card.style.display = index < visibleCount ? "block" : "none";
     });
 
+    // Agar total cards 10 ya usse kam hain to button hide kar do
+    if (totalCards <= visibleCount) {
+      loadMoreBtn.style.display = "none";
+    }
+
+    // Button click event
     loadMoreBtn.addEventListener("click", () => {
       for (let i = visibleCount; i < visibleCount + 10 && i < totalCards; i++) {
         cards[i].style.display = "block";
@@ -394,6 +401,7 @@ Face must match the reference image of me.
 
       visibleCount += 10;
 
+      // Jab sab show ho jayein to button hide kar do
       if (visibleCount >= totalCards) {
         loadMoreBtn.style.display = "none";
       }
