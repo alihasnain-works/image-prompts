@@ -43,8 +43,268 @@
   <!-- ========== PROMPT CARDS SECTION ========== -->
     <section class="cards">
     
+<!-- ========== PROMPT CARD 81 ========== -->
+<article class="card">
+  <img src="assets/Prompt_81.png" alt="Prompt 81">
+  <div class="prompt-header">
+    <h3>Prompt 81</h3>
+    <div class="toggle-btn" onclick="togglePrompt(this)"></div>
+  </div>
+  <p class="prompt-text">
+    Prompt Here
+  </p>
+  <button class="btn copy-btn" onclick="copyPrompt(this)">Copy Prompt</button>
+</article>
 
-    
+<!-- ========== PROMPT CARD 82 ========== -->
+<article class="card">
+  <img src="assets/Prompt_82.png" alt="Prompt 82">
+  <div class="prompt-header">
+    <h3>Prompt 82</h3>
+    <div class="toggle-btn" onclick="togglePrompt(this)"></div>
+  </div>
+  <p class="prompt-text">
+    Prompt Here
+  </p>
+  <button class="btn copy-btn" onclick="copyPrompt(this)">Copy Prompt</button>
+</article>
+
+<!-- ========== PROMPT CARD 83 ========== -->
+<article class="card">
+  <img src="assets/Prompt_83.png" alt="Prompt 83">
+  <div class="prompt-header">
+    <h3>Prompt 83</h3>
+    <div class="toggle-btn" onclick="togglePrompt(this)"></div>
+  </div>
+  <p class="prompt-text">
+    Prompt Here
+  </p>
+  <button class="btn copy-btn" onclick="copyPrompt(this)">Copy Prompt</button>
+</article>
+
+<!-- ========== PROMPT CARD 84 ========== -->
+<article class="card">
+  <img src="assets/Prompt_84.png" alt="Prompt 84">
+  <div class="prompt-header">
+    <h3>Prompt 84</h3>
+    <div class="toggle-btn" onclick="togglePrompt(this)"></div>
+  </div>
+  <p class="prompt-text">
+    Prompt Here
+  </p>
+  <button class="btn copy-btn" onclick="copyPrompt(this)">Copy Prompt</button>
+</article>
+
+<!-- ========== PROMPT CARD 85 ========== -->
+<article class="card">
+  <img src="assets/Prompt_85.png" alt="Prompt 85">
+  <div class="prompt-header">
+    <h3>Prompt 85</h3>
+    <div class="toggle-btn" onclick="togglePrompt(this)"></div>
+  </div>
+  <p class="prompt-text">
+    Prompt Here
+  </p>
+  <button class="btn copy-btn" onclick="copyPrompt(this)">Copy Prompt</button>
+</article>
+
+<!-- ========== PROMPT CARD 86 ========== -->
+<article class="card">
+  <img src="assets/Prompt_86.png" alt="Prompt 86">
+  <div class="prompt-header">
+    <h3>Prompt 86</h3>
+    <div class="toggle-btn" onclick="togglePrompt(this)"></div>
+  </div>
+  <p class="prompt-text">
+    Prompt Here
+  </p>
+  <button class="btn copy-btn" onclick="copyPrompt(this)">Copy Prompt</button>
+</article>
+
+<!-- ========== PROMPT CARD 87 ========== -->
+<article class="card">
+  <img src="assets/Prompt_87.png" alt="Prompt 87">
+  <div class="prompt-header">
+    <h3>Prompt 87</h3>
+    <div class="toggle-btn" onclick="togglePrompt(this)"></div>
+  </div>
+  <p class="prompt-text">
+    Prompt Here
+  </p>
+  <button class="btn copy-btn" onclick="copyPrompt(this)">Copy Prompt</button>
+</article>
+
+<!-- ========== PROMPT CARD 88 ========== -->
+<article class="card">
+  <img src="assets/Prompt_88.png" alt="Prompt 88">
+  <div class="prompt-header">
+    <h3>Prompt 88</h3>
+    <div class="toggle-btn" onclick="togglePrompt(this)"></div>
+  </div>
+  <p class="prompt-text">
+    Prompt Here
+  </p>
+  <button class="btn copy-btn" onclick="copyPrompt(this)">Copy Prompt</button>
+</article>
+
+<!-- ========== PROMPT CARD 89 ========== -->
+<article class="card">
+  <img src="assets/Prompt_89.png" alt="Prompt 89">
+  <div class="prompt-header">
+    <h3>Prompt 89</h3>
+    <div class="toggle-btn" onclick="togglePrompt(this)"></div>
+  </div>
+  <p class="prompt-text">
+    Prompt Here
+  </p>
+  <button class="btn copy-btn" onclick="copyPrompt(this)">Copy Prompt</button>
+</article>
+
+<!-- ========== PROMPT CARD 90 ========== -->
+<article class="card">
+  <img src="assets/Prompt_90.png" alt="Prompt 90">
+  <div class="prompt-header">
+    <h3>Prompt 90</h3>
+    <div class="toggle-btn" onclick="togglePrompt(this)"></div>
+  </div>
+  <p class="prompt-text">
+    Prompt Here
+  </p>
+  <button class="btn copy-btn" onclick="copyPrompt(this)">Copy Prompt</button>
+</article>
+
+<!-- ========== PROMPT CARD 91 ========== -->
+<article class="card">
+  <img src="assets/Prompt_91.png" alt="Prompt 91">
+  <div class="prompt-header">
+    <h3>Prompt 91</h3>
+    <div class="toggle-btn" onclick="togglePrompt(this)"></div>
+  </div>
+  <p class="prompt-text">
+    Prompt Here
+  </p>
+  <button class="btn copy-btn" onclick="copyPrompt(this)">Copy Prompt</button>
+</article>
+
+<!-- ========== PROMPT CARD 92 ========== -->
+<article class="card">
+  <img src="assets/Prompt_92.png" alt="Prompt 92">
+  <div class="prompt-header">
+    <h3>Prompt 92</h3>
+    <div class="toggle-btn" onclick="togglePrompt(this)"></div>
+  </div>
+  <p class="prompt-text">
+    Prompt Here
+  </p>
+  <button class="btn copy-btn" onclick="copyPrompt(this)">Copy Prompt</button>
+</article>
+
+<!-- ========== PROMPT CARD 93 ========== -->
+<article class="card">
+  <img src="assets/Prompt_93.png" alt="Prompt 93">
+  <div class="prompt-header">
+    <h3>Prompt 93</h3>
+    <div class="toggle-btn" onclick="togglePrompt(this)"></div>
+  </div>
+  <p class="prompt-text">
+    Prompt Here
+  </p>
+  <button class="btn copy-btn" onclick="copyPrompt(this)">Copy Prompt</button>
+</article>
+
+<!-- ========== PROMPT CARD 94 ========== -->
+<article class="card">
+  <img src="assets/Prompt_94.png" alt="Prompt 94">
+  <div class="prompt-header">
+    <h3>Prompt 94</h3>
+    <div class="toggle-btn" onclick="togglePrompt(this)"></div>
+  </div>
+  <p class="prompt-text">
+    Prompt Here
+  </p>
+  <button class="btn copy-btn" onclick="copyPrompt(this)">Copy Prompt</button>
+</article>
+
+<!-- ========== PROMPT CARD 95 ========== -->
+<article class="card">
+  <img src="assets/Prompt_95.png" alt="Prompt 95">
+  <div class="prompt-header">
+    <h3>Prompt 95</h3>
+    <div class="toggle-btn" onclick="togglePrompt(this)"></div>
+  </div>
+  <p class="prompt-text">
+    Prompt Here
+  </p>
+  <button class="btn copy-btn" onclick="copyPrompt(this)">Copy Prompt</button>
+</article>
+
+<!-- ========== PROMPT CARD 96 ========== -->
+<article class="card">
+  <img src="assets/Prompt_96.png" alt="Prompt 96">
+  <div class="prompt-header">
+    <h3>Prompt 96</h3>
+    <div class="toggle-btn" onclick="togglePrompt(this)"></div>
+  </div>
+  <p class="prompt-text">
+    Prompt Here
+  </p>
+  <button class="btn copy-btn" onclick="copyPrompt(this)">Copy Prompt</button>
+</article>
+
+<!-- ========== PROMPT CARD 97 ========== -->
+<article class="card">
+  <img src="assets/Prompt_97.png" alt="Prompt 97">
+  <div class="prompt-header">
+    <h3>Prompt 97</h3>
+    <div class="toggle-btn" onclick="togglePrompt(this)"></div>
+  </div>
+  <p class="prompt-text">
+    Prompt Here
+  </p>
+  <button class="btn copy-btn" onclick="copyPrompt(this)">Copy Prompt</button>
+</article>
+
+<!-- ========== PROMPT CARD 98 ========== -->
+<article class="card">
+  <img src="assets/Prompt_98.png" alt="Prompt 98">
+  <div class="prompt-header">
+    <h3>Prompt 98</h3>
+    <div class="toggle-btn" onclick="togglePrompt(this)"></div>
+  </div>
+  <p class="prompt-text">
+    Prompt Here
+  </p>
+  <button class="btn copy-btn" onclick="copyPrompt(this)">Copy Prompt</button>
+</article>
+
+<!-- ========== PROMPT CARD 99 ========== -->
+<article class="card">
+  <img src="assets/Prompt_99.png" alt="Prompt 99">
+  <div class="prompt-header">
+    <h3>Prompt 99</h3>
+    <div class="toggle-btn" onclick="togglePrompt(this)"></div>
+  </div>
+  <p class="prompt-text">
+    Prompt Here
+  </p>
+  <button class="btn copy-btn" onclick="copyPrompt(this)">Copy Prompt</button>
+</article>
+
+<!-- ========== PROMPT CARD 100 ========== -->
+<article class="card">
+  <img src="assets/Prompt_100.png" alt="Prompt 100">
+  <div class="prompt-header">
+    <h3>Prompt 100</h3>
+    <div class="toggle-btn" onclick="togglePrompt(this)"></div>
+  </div>
+  <p class="prompt-text">
+    Prompt Here
+  </p>
+  <button class="btn copy-btn" onclick="copyPrompt(this)">Copy Prompt</button>
+</article>
+</section>
+</main>
+
 
     <!-- ========== PAGINATION SECTION ========== -->
   <div class="pagination">
