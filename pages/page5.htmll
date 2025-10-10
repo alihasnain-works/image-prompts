@@ -40,7 +40,9 @@
       <p class="lead">Simple gallery style page for prompts</p>
     </section>
 
-
+  <!-- ========== PROMPT CARDS SECTION ========== -->
+    <section class="cards">
+    
 
     
 
