@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- ========== META & TITLE SECTION ========== -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Prompt Gallery</title>
+  <link rel="stylesheet" href="../styles.css" />
+
+  <!-- ========== FAVICON ========== -->
+  <link rel="icon" type="image/png" href="../assets/Icons/Favicon_PromptGallery.png">
+</head>
+
+<body>
+  <!-- ========== HEADER SECTION ========== -->
+  <header class="site-header">
+    <div class="container header-container">
+      <!-- Logo Image -->
+      <a href="../index.html">
+  <img src="../assets/Icons/Header_PromptGallery.png" alt="Prompt Gallery Logo" class="site-logo">
+      </a>
+
+      <!-- Site Title -->
+      <h1 class="brand">All Trending Prompts</h1>
+
+      <!-- Instagram Tag -->
+<p class="tag">
+  <img src="../assets/Icons/instagram_logo.png" alt="Instagram" class="instagram-logo">
+  <a href="https://www.instagram.com/alihasnain.designs" target="_blank" class="insta-link">alihasnain.designs</a>
+</p>
+    </div>
+  </header>
+
+  <!-- ========== MAIN CONTENT SECTION ========== -->
+  <main class="container main-content">
+
+    <!-- ========== HERO SECTION ========== -->
+    <section class="hero">
+      <h2>Explore | Create | Share</h2>
+      <p class="lead">Simple gallery style page for prompts</p>
+    </section>
+
+
+
+    
+
+    <!-- ========== PAGINATION SECTION ========== -->
+  <div class="pagination">
+    <a href="page4.html">4</a>
+    <a href="page5.html" class="active">5</a>
+    <a href="page6.html">6</a>
+  </div>
+
+  <!-- ========== FOOTER SECTION ========== -->
+  <footer class="site-footer">
+    <div class="container">
+      <small>Created by alihasnain.designs</small>
+    </div>
+  </footer>
+
+  <!-- ========== COPY PROMPT SCRIPT ========== -->
+  <script>
+    function copyPrompt(button) {
+      const text = button.parentElement.querySelector(".prompt-text").innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        button.innerText = "Copied! ✅";
+        setTimeout(() => button.innerText = "Copy Prompt", 2000);
+      });
+    }
+  </script>
+
+  <!-- ========== TOGGLE PROMPT SCRIPT ========== -->
+  <script>
+    const toggleButtons = document.querySelectorAll('.toggle-btn');
+    toggleButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const promptText = button.parentElement.nextElementSibling;
+        promptText.classList.toggle('show');
+        button.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+</html>
