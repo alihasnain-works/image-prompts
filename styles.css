@@ -74,9 +74,11 @@ body{
   }
 }
 
+/* ========== INSTAGRAM LINK STYLE ========== */
 .insta-link {
   color: var(--muted);
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .insta-link:hover {
