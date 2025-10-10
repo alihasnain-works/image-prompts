@@ -74,18 +74,6 @@ body{
   }
 }
 
-/* ========== INSTAGRAM LINK STYLE ========== */
-.insta-link {
-  color: var(--muted);
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.insta-link:hover {
-  color: var(--accent);
-  text-decoration: underline;
-}
-
 /* ===========================
    5. HERO SECTION
    =========================== */
@@ -367,28 +355,18 @@ body{
 }  
 
 /* ===========================
-   18. LOAD MORE BUTTON STYLE
+   INSTAGRAM LINK STYLE
    =========================== */
-.load-more-container {
-  text-align: center;
-  margin-top: 30px;
+.insta-link {
+  color: var(--muted) !important;
+  text-decoration: none !important;
+  font-weight: 500;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
-.load-more-btn {
-  background-color: var(--card);
-  color: var(--text);
-  border: 1px solid rgba(255,255,255,0.1);
-  padding: 10px 24px;
-  border-radius: var(--radius);
-  cursor: pointer;
-  font-size: 14px;
-  transition: all 0.3s ease;
-  box-shadow: 0 6px 18px rgba(2,6,23,0.6);
-}
-
-.load-more-btn:hover {
-  background-color: var(--accent);
-  color: #000;
+.insta-link:hover {
+  color: var(--accent) !important;
+  text-decoration: underline !important;
 }
 
 .site-footer{padding:22px 0;text-align:center;color:var(--muted);font-size:13px}
