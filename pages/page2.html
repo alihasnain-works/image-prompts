@@ -26,7 +26,7 @@
       <!-- Instagram Tag -->
       <p class="tag">
         <img src="../assets/Icons/instagram_logo.png" alt="Instagram" class="instagram-logo">
-        alihasnain.designs
+        <a href="https://www.instagram.com/alihasnain.designs"> alihasnain.designs
       </p>
     </div>
   </header>
@@ -330,12 +330,6 @@ Face must match the reference image of me.
       </article>
 
     </section>
-
-  <!-- ========== LOAD MORE BUTTON ========== -->
-<div class="load-more-container" style="text-align:center; margin-top:20px;">
-  <button id="loadMoreBtn" class="load-more-btn">Load More</button>
-</div>
-
   </main>
   
   <!-- ========== PAGINATION SECTION ========== -->
@@ -374,36 +368,5 @@ Face must match the reference image of me.
       });
     });
   </script>
-
-  <!-- ========== LOAD MORE SCRIPT ========== -->
-<script>
-  const container = document.querySelector("#promptCards");
-  const cards = container.querySelectorAll(".card");
-  const loadMoreBtn = document.getElementById("loadMoreBtn");
-
-  let visibleCount = 10; // Pehle 10 cards show honge
-  const totalCount = cards.length;
-
-  // Pehle sab me se sirf first 10 show karo
-  cards.forEach((card, index) => {
-    if (index >= visibleCount) card.style.display = "none";
-  });
-
-  // Jab button pe click ho
-  loadMoreBtn.addEventListener("click", () => {
-    const nextVisible = visibleCount + 10;
-
-    for (let i = visibleCount; i < nextVisible && i < totalCount; i++) {
-      cards[i].style.display = "block";
-    }
-
-    visibleCount = nextVisible;
-
-    // Jab saare cards show ho jayein to button hide kar do
-    if (visibleCount >= totalCount) {
-      loadMoreBtn.style.display = "none";
-    }
-  });
-</script>
 </body>
   </html>
