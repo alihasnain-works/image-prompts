@@ -332,7 +332,7 @@ Face must match the reference image of me.
     </section>
 
   <!-- ========== LOAD MORE BUTTON ========== -->
-<div class="load-more-container">
+<div class="load-more-container" style="text-align:center; margin-top:20px;">
   <button id="loadMoreBtn" class="load-more-btn">Load More</button>
 </div>
 
@@ -377,36 +377,32 @@ Face must match the reference image of me.
 
   <!-- ========== LOAD MORE SCRIPT ========== -->
 <script>
-  document.addEventListener("DOMContentLoaded", function() {
-    const cards = document.querySelectorAll("#promptCards .card");
-    const loadMoreBtn = document.getElementById("loadMoreBtn");
+  const container = document.querySelector("#promptCards");
+  const cards = container.querySelectorAll(".card");
+  const loadMoreBtn = document.getElementById("loadMoreBtn");
 
-    let visibleCount = 10; // Pehle 10 show honge
-    const totalCards = cards.length;
+  let visibleCount = 10; // Pehle 10 cards show honge
+  const totalCount = cards.length;
 
-    // Start me sirf pehle 10 show karna
-    cards.forEach((card, index) => {
-      card.style.display = index < visibleCount ? "block" : "none";
-    });
+  // Pehle sab me se sirf first 10 show karo
+  cards.forEach((card, index) => {
+    if (index >= visibleCount) card.style.display = "none";
+  });
 
-    // Agar total cards 10 ya usse kam hain to button hide kar do
-    if (totalCards <= visibleCount) {
-      loadMoreBtn.style.display = "none";
+  // Jab button pe click ho
+  loadMoreBtn.addEventListener("click", () => {
+    const nextVisible = visibleCount + 10;
+
+    for (let i = visibleCount; i < nextVisible && i < totalCount; i++) {
+      cards[i].style.display = "block";
     }
 
-    // Button click event
-    loadMoreBtn.addEventListener("click", () => {
-      for (let i = visibleCount; i < visibleCount + 10 && i < totalCards; i++) {
-        cards[i].style.display = "block";
-      }
+    visibleCount = nextVisible;
 
-      visibleCount += 10;
-
-      // Jab sab show ho jayein to button hide kar do
-      if (visibleCount >= totalCards) {
-        loadMoreBtn.style.display = "none";
-      }
-    });
+    // Jab saare cards show ho jayein to button hide kar do
+    if (visibleCount >= totalCount) {
+      loadMoreBtn.style.display = "none";
+    }
   });
 </script>
 </body>
